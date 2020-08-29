@@ -1,6 +1,7 @@
 #!/bin/bash
 
 rm ../*.html
+rm ../build/*.html
 
 cat index.md > index_tmp.md
 
@@ -35,10 +36,10 @@ do
     cat head.html tmp.html foot.html | \
     sed "s/{{FILE}}/$file_base/g" |    \
     sed "s/{{TITLE}}/$doc_title/g"     \
-        > ../$file_base.html
+        > ../build/$file_base.html
 
     rm tmp.html
 done
 
 rm index_tmp.md
-mv ../index_tmp.html ../index.html
+mv ../build/index_tmp.html ../build/index.html
