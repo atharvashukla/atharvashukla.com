@@ -1,6 +1,5 @@
 #!/bin/bash
 
-rm ../*.html
 rm ../build/*.html
 
 cat index.md > index_tmp.md
@@ -9,7 +8,7 @@ files=`ls -v *.md`
 
 for md_file in $files
 do
-    if [[ $md_file != "index.md" && $md_file != "index_tmp.md" ]]
+    if [[ $md_file != "index.md" && $md_file != "index_tmp.md" && $md_file != "404.md" ]]
     then
         file_base=`basename $md_file .md`
         doc_title=`grep -m 1 "^# .*" $md_file | sed s/"# "//g`

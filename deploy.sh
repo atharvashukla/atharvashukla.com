@@ -1,3 +1,2 @@
-
-
-./push.sh
+firebase deploy;
+./push.sh;

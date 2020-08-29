@@ -1,0 +1,16 @@
+[debug] [2020-08-29T03:51:32.923Z] ----------------------------------------------------------------------
+[debug] [2020-08-29T03:51:32.924Z] Command:       /Users/atharvashukla/.nvm/versions/node/v14.8.0/bin/node /Users/atharvashukla/.nvm/versions/node/v14.8.0/bin/firebase deploy
+[debug] [2020-08-29T03:51:32.925Z] CLI Version:   8.7.0
+[debug] [2020-08-29T03:51:32.925Z] Platform:      darwin
+[debug] [2020-08-29T03:51:32.925Z] Node Version:  v14.8.0
+[debug] [2020-08-29T03:51:32.925Z] Time:          Sat Aug 29 2020 09:21:32 GMT+0530 (India Standard Time)
+[debug] [2020-08-29T03:51:32.926Z] ----------------------------------------------------------------------
+[debug] [2020-08-29T03:51:32.926Z] 
+[debug] [2020-08-29T03:51:32.933Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-08-29T03:51:32.933Z] > authorizing via signed-in user
+[debug] [2020-08-29T03:51:32.933Z] [iam] checking project atharva-shukla for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-08-29T03:51:32.935Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/atharva-shukla:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-08-29T03:51:36.021Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 29 Aug 2020 03:51:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1300","alt-svc":"h3-29=\":443\"; ma=2592000,h3-27=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-08-29T03:51:36.023Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/atharva-shukla  
+ 
