@@ -7,8 +7,8 @@
 - Matthias Felleisen
 - 9:50 am - 11:30 am, TF
 - Links
-  - CS 4500 homepage (personal): https://felleisen.org/matthias/4500-f20/index.html
-  - CS 4500 homepage (ccs): https://www.ccs.neu.edu/home/matthias/4500-f20/
+  - CS 4500 homepage (personal): [https://felleisen.org/matthias/4500-f20/index.html](https://felleisen.org/matthias/4500-f20/index.html)
+  - CS 4500 homepage (ccs): [https://www.ccs.neu.edu/home/matthias/4500-f20/](https://www.ccs.neu.edu/home/matthias/4500-f20/)
 
 
 ---
@@ -18,12 +18,12 @@
 - Frank Tip
 - 6:00 pm - 9:15 pm, T
 - Link: 
-  - CS 4530 Homepage: https://pages.github.ccs.neu.edu/CS5500-CourseMaterials/CS4530-CS5500-Fall2020/index.html
-  - schedule: https://pages.github.ccs.neu.edu/CS5500-CourseMaterials/CS4530-CS5500-Fall2020/sched.html
-  - HW0 (Due: Friday, 18 September 2020): https://pages.github.ccs.neu.edu/CS5500-CourseMaterials/CS4530-CS5500-Fall2020/Homeworks/hw0.html
+  - CS 4530 Homepage: [https://pages.github.ccs.neu.edu/CS5500-CourseMaterials/CS4530-CS5500-Fall2020/index.html](https://pages.github.ccs.neu.edu/CS5500-CourseMaterials/CS4530-CS5500-Fall2020/index.html)
+  - schedule: [https://pages.github.ccs.neu.edu/CS5500-CourseMaterials/CS4530-CS5500-Fall2020/sched.html](https://pages.github.ccs.neu.edu/CS5500-CourseMaterials/CS4530-CS5500-Fall2020/sched.html)
+  - HW0 (Due: Friday, 18 September 2020): [https://pages.github.ccs.neu.edu/CS5500-CourseMaterials/CS4530-CS5500-Fall2020/Homeworks/hw0.html](https://pages.github.ccs.neu.edu/CS5500-CourseMaterials/CS4530-CS5500-Fall2020/Homeworks/hw0.html)
   - ...
-- piazza: https://piazza.com/class/kdvmw284wf12g9
-- books: (**Note for NU students**: https://library.northeastern.edu/research/resources/items/oreilly-for-higher-education-previously-safari-books-online)
+- piazza: [https://piazza.com/class/kdvmw284wf12g9](https://piazza.com/class/kdvmw284wf12g9)
+- books: (**Note for NU students**: [https://library.northeastern.edu/research/resources/items/oreilly-for-higher-education-previously-safari-books-online](https://library.northeastern.edu/research/resources/items/oreilly-for-higher-education-previously-safari-books-online))
   - Software Engineering A Practitioner's Approach
   - Refactoring: Improving the Design of Existing Code
   - The Mythical Man-Month: Essays on Software Engineering
@@ -48,7 +48,7 @@
 
 - Thomas Wahl
 - 1:35 pm - 2:40 pm, R
-- CS 4950 homepage: https://www.khoury.northeastern.edu/home/wahl/Teaching/Precise-Software-Analysis/2020-fall
+- CS 4950 homepage: [https://www.khoury.northeastern.edu/home/wahl/Teaching/Precise-Software-Analysis/2020-fall](https://www.khoury.northeastern.edu/home/wahl/Teaching/Precise-Software-Analysis/2020-fall)
 - course topics
   - Basic motivation for precise, automated software analysis [1,2]
   - Semantic foundations [3,4]
@@ -64,8 +64,8 @@ course components:
   - Paper presentations (30%)
   - Class participation (20%)
 - paper review tex:
-  - tex code: https://www.khoury.northeastern.edu/home/wahl/Teaching/Precise-Software-Analysis/2020-fall/paper-review.tex
-  - pdf rendering:  https://www.khoury.northeastern.edu/home/wahl/Teaching/Precise-Software-Analysis/2020-fall/paper-review.pdf
+  - tex code: [https://www.khoury.northeastern.edu/home/wahl/Teaching/Precise-Software-Analysis/2020-fall/paper-review.tex](https://www.khoury.northeastern.edu/home/wahl/Teaching/Precise-Software-Analysis/2020-fall/paper-review.tex)
+  - pdf rendering:  [https://www.khoury.northeastern.edu/home/wahl/Teaching/Precise-Software-Analysis/2020-fall/paper-review.pdf](https://www.khoury.northeastern.edu/home/wahl/Teaching/Precise-Software-Analysis/2020-fall/paper-review.pdf)
 
 
 ---
