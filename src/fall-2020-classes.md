@@ -4,7 +4,9 @@
 - Warning for others reading this: This page also has links to my local filesystem. Use [this](https://chrome.google.com/webstore/detail/enable-local-file-links/nikfmfgobenbhmocjaaboihbeocackld/) extension to open local files in chrome. Github repo: [here](https://github.com/tksugimoto/chrome-extension_open-local-file-link).
 
 Local files:
+
 - [`~/Desktop/f20`](file:///Users/atharvashukla/Desktop/f20/)
+
   - [`precise`](file:///Users/atharvashukla/Desktop/f20/precise)
   - [`swdev`](file:///Users/atharvashukla/Desktop/f20/swdev)
   - [`sweng`](file:///Users/atharvashukla/Desktop/f20/sweng)
