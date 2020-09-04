@@ -2,7 +2,11 @@
 
 - This is like a "bookmark" webpage to access various course resources for all my classes. 
 - Warning for others reading this: This page also has links to my local filesystem
-- [local folder `~/Desktop/f20`](file:///Users/atharvashukla/Desktop/f20/)
+- [`~/Desktop/f20`](file:///Users/atharvashukla/Desktop/f20/)
+  - [`precise`](file:///Users/atharvashukla/Desktop/f20/precise)
+  - [`swdev`](file:///Users/atharvashukla/Desktop/f20/swdev)
+  - [`sweng`](file:///Users/atharvashukla/Desktop/f20/sweng)
+  - [`typesys`](file:///Users/atharvashukla/Desktop/f20/typesys)
 
 ---
 

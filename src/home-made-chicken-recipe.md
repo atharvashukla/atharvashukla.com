@@ -14,7 +14,7 @@
 - lehsun, half bowl
 - adrak, 1-2 pieces
 - chicken, full, local
-- - - - - - - - - 
+- ...
 - cut up the onion
 - add oil to pan
 - add jira + patti + onion to pan
@@ -36,5 +36,5 @@
 - add tej patta
 - add masala and cover it. this will take some time. 
 - note that will add garam masala, and methi, maybe even curd later. 
-- - - - - - - - - 
+- ...
 
