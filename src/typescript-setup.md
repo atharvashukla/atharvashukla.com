@@ -1,4 +1,4 @@
-# Typescript Seupt
+# Typescript Setup
 
 Some Packages:
 
