@@ -2,7 +2,7 @@
 
 - dalchini
 - javitri
-- "star"masala
+- "star" masala
 - patthar phool
 - jayaphal
 - kali mirchi, long
