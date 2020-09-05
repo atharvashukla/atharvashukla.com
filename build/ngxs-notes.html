@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Atharva Shukla</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <div id="wrapper">
+      <header>
+      </header><h1 id="ngxs-notes">Ngxs notes</h1>
+<p>Notes on ngxs. Learning how to manage state in a better way in Angular.</p>
+<ul>
+<li>What is NGXS?
+<ul>
+<li>state management pattern + library for angular.</li>
+<li>single source of truth for app’s state</li>
+<li>simple rules for predictable state mutations</li>
+<li>modeled after CQRS pattern implemented in Redux and NgRx</li>
+<li>reduces boilerplate by using TS classes and decorators</li>
+</ul></li>
+<li>Why
+<ul>
+<li>more Angular-y api for a state management solution</li>
+<li>Simple: rxjs seen more as an implementation detail</li>
+<li>DI: can inject angular service into state classes</li>
+<li>actions are async, so they have a life cycle</li>
+<li>there’s an option for promises to be returned</li>
+</ul></li>
+<li>installation
+<ul>
+<li>npm install <span class="citation" data-cites="ngxs/store">@ngxs/store</span> –save</li>
+<li>add to imports: <code>NgxsModule.forRoot([ZooState], { developmentMode: !environment.production })</code>
+<ul>
+<li>can pass root stores along with options. use <code>forFeature</code> option with the same args for lazy loading.</li>
+<li>can enable more runtime checks in dev mode, deep-freeze-strict</li>
+<li>make sure to add <code>NgxsModule.forRoot([])</code> to root module</li>
+</ul></li>
+<li>dev builds: <code>npm install @ngxs/store@dev --save; npm install @ngxs/logger-plugin@dev --save</code></li>
+</ul></li>
+<li>Concetps
+<ul>
+<li><strong>Intro</strong>. 4 concepts:
+<ul>
+<li><em>Store</em>: global state container, action dispatcher and selector</li>
+<li><em>Actions</em>: Class describing the action to take and its associated metadata</li>
+<li><em>State</em>: Class definition of the state</li>
+<li><em>Selects</em>: State slice selectors</li>
+<li>Note: these concepts create a circular fflow traceling from component dispatching an action, to a store reacting to the action, back to the component through state select.</li>
+</ul></li>
+<li><strong>Store</strong>.
+<ul>
+<li>The store is a global state manager that dispatches actions your state containers listen to and provide a way to select data slices out from the global state.</li>
+<li>Createing an action. We just export a class - AddAnimal - with a static readonly type and a constructor for the data that goes with it.</li>
+<li>Dispatching actions: To dispatch actions, we inject the Store service into the component or service, and then invoke te dispatch function with tan action (or an array of actions.)
+<ul>
+<li>Note that the dispatch function returns an observable, so we can subscribe and do other stuff post that.</li>
+<li>To get the state affter dispatch: use the pipe operator followed by withLatestFrom(the selected slice), and then subscribe to it to get the animals again!</li>
+</ul></li>
+<li>Snapshots: <code>store.snapshot()</code> to get the snapshot of the state.</li>
+<li>Selecting state. See <code>select</code>.</li>
+<li>Rreset: To reset the state completely without trigerring any actions. (useful for testing): <code>store.reset(myNewStateObject)</code>. Will not fire any lifecycle event. EFFECTFUL.</li>
+</ul></li>
+<li><strong>Actions</strong>.
+<ul>
+<li>commands which should trigger something to happen/resulting event of something that has already appened.</li>
+<li>Internal actions:
+<ul>
+<li><code>@@INIT</code>: store being initialized beffore all the ngxsOnInit Life-cycle events</li>
+<li><code>@@UPDATE_STATE</code>: a new lazy-loaded state being added to the store.</li>
+</ul></li>
+<li>Simple action. Just export class with a stateic readonly type. And let’s say we’re just flipping a boolean flag in our internal state.</li>
+<li>Actions with Metadata: same as above but with a constructor that accepts some data.</li>
+<li>Dispatching Actions. Obviously we dispatch these. See <code>Store</code> above.</li>
+<li>How should you name your actions?
+<ul>
+<li>Commands: tell your app to do something. usually triggered by user events. The name should contain: 1. the context where the command came from, 2. a verb describing what we want to do with the entity. 3. the entity we are acting upon. Example: <code>[User API] GetUser</code>, <code>[Product Page] AddItemToCart</code></li>
+<li>Event examples: Events are actions that have already happened and we now need to react to them. Should be in past tense. Examples: <code>[User Details Page] PasswordChanged</code> and <code>[Project Stars Component] StarsUpdated</code>. See: <a href="https://www.youtube.com/watch?v=JmnsEvoy-gY">Good action Hygiene by Mike Ryan</a></li>
+</ul></li>
+<li>Group your actions: Don’t sufffic your action names like AddTodo, EditTodo, group similar actions into a namespace.</li>
+</ul></li>
+<li><strong>State</strong>.
+<ul>
+<li>State are classes that deine a state container.</li>
+<li>Defining a State.</li>
+</ul></li>
+<li><strong>Select</strong>.
+<ul>
+<li>.</li>
+</ul></li>
+</ul></li>
+</ul>
+<footer>
+</footer>
+</div>
+</body>
+</html>
