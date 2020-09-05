@@ -1,4 +1,4 @@
-# Typescript Setup
+# typescript
 
 Some Packages:
 

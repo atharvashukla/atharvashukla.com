@@ -1,4 +1,4 @@
-# Ngxs notes
+# ngxs
 
 Notes on ngxs. Learning how to manage state in a better way in Angular. 
 
@@ -53,5 +53,5 @@ Notes on ngxs. Learning how to manage state in a better way in Angular.
     - State are classes that deine a state container. 
     - Defining a State. 
   - **Select**.
-    - 
+    - .
 
