@@ -38,3 +38,7 @@
 - note that will add garam masala, and kasturi methi, maybe even curd later. 
 - ...
 
+
+![](https://atharvashukla.com/chicken1.jpg)
+
+![](https://atharvashukla.com/chicken2.jpg)
