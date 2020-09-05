@@ -1,4 +1,4 @@
-# Home-made Chicken Recipe
+# Chicken
 
 - dalchini
 - javitri
@@ -35,7 +35,7 @@
 - add kashmiri laal, with some water mixed in
 - add tej patta
 - add masala and cover it. this will take some time. 
-- note that will add garam masala, and kasturi methi, maybe even curd later. 
+- note that will add garam masala, and kasoori methi, maybe even curd later. 
 - ...
 
 
