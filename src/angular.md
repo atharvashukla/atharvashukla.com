@@ -7,6 +7,7 @@
 
 
 NGRX/NGXS
+
 - Ngrx (DesignCourse): https://www.youtube.com/watch?v=9P5DTlg9oLc
 - Ngxs (DesignCourse): https://www.youtube.com/watch?v=SfiO3bDUK7Q
 - Ngrx (Fireship): https://www.youtube.com/watch?v=f97ICOaekNU
