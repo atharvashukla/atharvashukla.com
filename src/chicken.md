@@ -39,6 +39,8 @@
 - ...
 
 
-![](https://atharvashukla.com/chicken1.jpg)
+![](/chicken1.jpg)
 
-![](https://atharvashukla.com/chicken2.jpg)
+![](/chicken2.jpg)
+
+![](/chicken4.jpg)
