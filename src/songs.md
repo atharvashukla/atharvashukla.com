@@ -1,4 +1,4 @@
-# songs
+# Songs
 
 ![](https://atharvashukla.com/ratm.jpg)
 

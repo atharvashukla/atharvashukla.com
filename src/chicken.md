@@ -1,4 +1,4 @@
-# chicken
+# Chicken
 
 - dalchini
 - javitri

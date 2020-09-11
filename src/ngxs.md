@@ -1,4 +1,4 @@
-# ngxs
+# NGXS
 
 Notes on ngxs. Learning how to manage state in a better way in Angular. 
 
