@@ -1,4 +1,5 @@
-# SetTheory
+# Kaplansky
+
 ```
 Set Theory and Metric Spaces - Irving Kaplansky
 
@@ -449,4 +450,189 @@ e ∈ A ⟹ (e ∈ B ∧ e ∈ C)
 
 
 Theorem FiniteAnd: fin(X) ∧ fin(Y) ⟹ fin(X ∧ Y)
+
+---
+
+Useful Theorems and Definitions
+Hypothetical Syllogism
+((P ⇒ Q) ∧ (Q ⇒ R)) ⇒ (P ⇒ R)
+Definition of Union
+A ⋃ B = { e | e ∈ A ∨ e ∈ B }
+Definition of Intersection
+A ⋂ B = { e | e ∈ A ∧ e ∈ B }
+Definition of Set Subtraction
+A - B = { e | e ∈ A ∧ e ∉ B }
+Definition of Complementation
+A’ = { e | e ∉ A }
+Definition of Subset
+A ⊂ B = ∀e: (e ∈ A ⟹ e ∈ B)
+Definition of Superset
+A ⊃ B = ∀e: (e ∈ B ⟹ e ∈ A)
+Definition 1 of Set Equality
+A = B = ∀e: (e ∈ A ⟺ e ∈ B)
+Definition 2 of Set Equality
+A = B = ( A ⊂ B ) ∧ ( B ⊂ A ) 
+Distribution of disjunction over conjunction
+A ∨ (B ∧ C) ⟺ (A ∨ B) ∧ (A ∨ C)
+Set Builder Property
+z ∈ {x | 𝜑(x)} iff 𝜑(z)
+Exportation
+A ⟹ [B ⟹ C] ≡ [A ∧ B] ⟹ C
+Definition of Symmetric Difference
+A + B = (A - B) ⋃ (B - A) = (A ⋂ B’) ⋃ (B ⋂ A’)
+
+Groups and Rings Definitions
+
+Algebraic Structure: An algebraic structure is an ordered tuple (S, ○_1, ○_2, ..., ○_n) where S is a set which has one or more binary operations ○_1, ○_2, … defined on all elements of S × S. 
+
+Closure: For the algebraic structure (S, ○), S is closed under ○ if and only if ∀(x, y) ∈ S × S : x ○ y ∈ S. 
+
+Left identity: For (S, ○), e ∈ S if a left identity if and only if x ∈ S : e ○ x = x. 
+Right identity: For (S, ○), e ∈ S if a right identity if and only if ∀ x ∈ S : x ○ e = x. 
+Identity: For (S, ○), e ∈ S is an identity element if and only if it is both left identity and right identity. ∀x in S : x ○ e = x = e ○ x.
+
+Left inverse: (S, ○) is a monoid whose identity is e. Then x ∈ S is a left inverse of y if and only if x ○ y = e.
+Right inverse: (S, ○) is a monoid whose identity is e. Then x ∈ S is a right inverse of y if and only if y ○ x = e. 
+Inverse: (S, ○) is an algebraic structure with an identity element e and x, y ∈ S. Then x is an inverse of y if and only if x is both a left inverse of y and a right inverse of y. x ○ y = e = y ○ x.
+
+Magma: (S, ○) where S is closed under ○.
+
+Semigroup: A semigroup is an associative magma. 
+
+Monoid: Monoid is a semigroup with an identity element.
+
+Group: A group is a semigroup with a monoid in which every element has an inverse. Group Axioms:
+(G0): Closure: ∀a, b ∈ G: a ○ b ∈ G
+(G1): Associativity: ∀a, b, c  ∈ G: a ○ (b ○ c) = (a ○ b) ○ c
+(G2): Identity: ∃e ∈ G: ∀a ∈ G: e ○ a = a = a ○ e
+(G3): Inverse: ∀a ∈ G: ∃b ∈  G: a ○ b = e = b ○ a
+
+Abelian group: is a group (G, *) where ∀a, b ∈ G : a * b = b * a. Every element in G commutes with every other element in G. Abelian Group Axioms:
+(G0): Closure: ∀x, y ∈ G: x ○ y ∈ G: x ○ y ∈ G
+(G1): Associativity: ∀x, y, z ∈ G: x ○ (y ○ z) = (x ○ y) ○ z
+(G2): Identity: ∃ e ∈ G : ∀x ∈ G: e ○ x = x = x ○ e
+(G3): Inverse: ∀y ∈ G: ∃x ∈ G: x ○ y = e  = y ○ x
+(C): Commutativity: ∀a, b ∈ G : a ○ b = b ○ a
+
+Ringoid: A ringoid is a triple (S, *, ○) where S is a set, * and ○ are binary operations on S, the operation ○ distributes over *. 
+∀a, b, c, ∈ S : a ○ (b * c) = (a ○ b) * (a ○ c)
+∀a, b, c, ∈ S : (a * b) ○ c = (a ○ c) * (b ○ c)
+For the expression above to make sense, S has to be closed under ○ and +.
+
+Semiring: A semiring is a ringoid (S, *, ○) in which  (S, *) forms a semigroup and (S, ○) forms a semigroup. Semiring Axioms:
+(A0): ∀a, b ∈ S: a * b ∈ S
+(A1): ∀a, b, c ∈ S: (a * b) * c = a * (b * c)
+(M0): ∀a, b ∈ S: a ○ b ∈ S
+(M1): ∀a, b, c ∈ S: (a ○ b) ○ c = a ○ (b ○ c)
+(D1): ∀a, b, c ∈ S: a ○ (b * c) = (a ○ b) * (a ○ c)
+(D2): ∀a, b, c ∈ S: (a * b) ○ c = (a ○ c) * (b ○ c)
+
+Ring: A ring (R, *, ○) is a semiring in which (R, ○) forms an abelian group. 
+
+
+                    Totality Associativity Identity Invertibility   Commutativity
+Semigroupoid        r        g             r        r               r
+Small Category      r        g             g        r               r
+Grupoid             r        g             g        g               r
+Magma               g        r             r        r               r
+Quasigroup          g        r             r        g               r
+Unital Magma        g        r             g        r               r
+Loop                g        r             g        g               r
+Semigroup           g        g             r        r               r
+Inverse Semigroup   g        g             r        g               r
+Monoid              g        g             g        r               r
+Commutative Monoid  g        g             g        r               g
+Group               g        g             g        g               r
+Abelian Group       g        g             g        g               g
+
+
+Ring with unity: (R, *, ○) is a ring with unity if and only if the multiplicative semigroup (R, ○) has an identity element. 
+
+Commutative and Unitary Ring: (R, *, ○) is a ring with unity which is also commutative.
+
+(A0): Closure under *: ∀a, b ∈ R: a * b ∈ R
+(A1): Associativity of *: ∀a, b, c ∈ R: (a * b) * c = a * (b * c)
+(A2): Commutativity of *: ∀a, b ∈ R: a * b = b * a
+(A3): Identity element for *: ∃e ∈ R: ∀a ∈ R: a * e = a = 0 * a
+(A4): Inverse elements for *: ∀a ∈ R: ∃a’ ∈ R: a * a’ = e = a’ * a
+(M0): Closure under ○: ∀a, b ∈ R: a ○ b ∈ R
+(M1): Associativity of ○: ∀a, b, c ∈ R: (a ○ b) ○ c = a ○ (b  ○ c)
+(M2): Commutativity of ○: ∀a, b ∈ R: a ○ b = b ○ a
+(M3): Identity element for ○: ∃f ∈ R: ∀a ∈ R: a ○ f = a = f ○ a
+(D): ○ is distributive over *:  ∀a, b, c ∈ R: a ○ (b * c) = (a ○ b) * (a ○ c) ∧ (a * b) ○ c = (a ○ c) * (b ○ c)
+
+Symmetric Difference is Associative and Commutative
+
+Theorem SD0: Set Difference is Commutative
+A + B ≡ B + A
+
+A + B
+≡ {Definition of Symmetric Difference}
+(A ⋂ B’) ⋃ (B ⋂ A’)
+≡ {Union is commutative}
+(B ⋂ A’) ⋃ (A ⋂ B’)
+≡ {Definition of Symmetric Difference}
+B + A
+
+Theorem SD1: Symmetric Difference is the union of the two sets intersected with the union of their complements
+A + B = (A ⋃ B) ⋂ (A’ ⋃ B’)
+
+A + B
+≡ {Definition of Symmetric Difference}
+(A ⋂ B’) ⋃ (B ⋂ A’)
+≡ {Union Distributes over Intersection}
+[(A ⋂ B’) ⋃ B] ⋂ [(A ⋂ B’) ⋃ A’]
+≡ {Union Distributes over Intersection}
+[(A ⋃ B) ⋂ (B’ ⋃ B)] ⋂ [(A ⋃ A’) ⋂ (B’ ⋃ A’)]
+≡ {Union of a set with its complement is U}
+[(A ⋃ B) ⋂ U] ⋂ [U ⋂ (B’ ⋃ A’)]
+≡ {Intersection of a set with U is the set itself}
+(A ⋃ B) ⋂ (B’ ⋃ A’)
+≡ {Union is commutative}
+(A ⋃ B) ⋂ (A’ ⋃ B’)
+
+
+Theorem SD2: Complement of Symmetric Difference
+(A + B)’ = (A’ ⋃ B) ⋂ (A ⋃ B’)
+
+(A + B)’
+≡ {Definition of Symmetric Difference}
+((A ⋂ B’) ⋃ (B ⋂ A’))’
+≡ {De Morgan’s Law}
+((A ⋂ B’)’ ⋂ (B ⋂ A’)’)
+≡ {De Morgan’s Law}
+(A’ ⋃ B) ⋂ (B’ ⋃ A)
+
+Theorem SD3: Expansion of Triple Symmetric Difference
+(A + B) + C = (A ⋃ B ⋃ C) ⋂ (A’ ⋃ B’ ⋃ C) ⋂ (A’ ⋃ B ⋃ C’) ⋂ (A ⋃ B’ ⋃ C’)
+
+(A + B) + C
+≡ {Theorem SD1 on (A + B) and C}
+((A + B) ⋃ C) ⋂ ((A + B)’ ⋃ C’)
+≡ {Theorem SD1 on A and B}
+([(A ⋃ B) ⋂ (A’ ⋃ B’)] ⋃ C) ⋂ ((A + B)’ ⋃ C’)
+≡ {Theorem SD2 on (A + B)’}
+([(A ⋃ B) ⋂ (A’ ⋃ B’)] ⋃ C) ⋂ ((A’ ⋃ B) ⋂ (A ⋃  B’) ⋃ C’)
+≡ {Union Distributes over Intersection}
+[(A ⋃ B ⋃ C) ⋂ (A’ ⋃ B’ ⋃ C)] ⋂ [(A’ ⋃ B ⋃ C’) ⋂ (A ⋃ B’ ⋃ C’)]
+≡ {Intersection is Associative}
+(A ⋃ B ⋃ C) ⋂ (A’ ⋃ B’ ⋃ C) ⋂ (A’ ⋃ B ⋃ C’) ⋂ (A ⋃ B’ ⋃ C’)
+
+Theorem SD4: Symmetric Difference is Associative
+(A + B) + C = A + (B + C)
+
+(A + B) + C
+≡ {Theorem SD3: Expansion of Triple Symmetric Difference}
+(A ⋃ B ⋃ C) ⋂ (A’ ⋃ B’ ⋃ C) ⋂ (A’ ⋃ B ⋃ C’) ⋂ (A ⋃ B’ ⋃ C’)
+≡ {Union is Commutative}
+(B ⋃ C ⋃ A) ⋂ (B’ ⋃ C ⋃ A’) ⋂ (B ⋃ C’ ⋃ A’) ⋂ (B’ ⋃ C’ ⋃ A)
+≡ {Intersection is Associative}
+(B ⋃ C ⋃ A) ⋂  (B’ ⋃ C’ ⋃ A) ⋃ (B’ ⋃ C ⋃ A’) ⋂ (B ⋃ C’ ⋃ A’)
+≡ {Theorem SD3: Expansion of Triple Symmetric Difference}
+(B + C) + A
+≡ {SD0: Set Difference is Commutative}
+A + (B + C)
+
+
+
 ```
