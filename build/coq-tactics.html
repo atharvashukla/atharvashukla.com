@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Atharva Shukla</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <div id="wrapper">
+      <header>
+      </header><h1 id="coq-tactics">Coq Tactics</h1>
+<p><a href="https://softwarefoundations.cis.upenn.edu/lf-current/Tactics.html">LF Tactics review</a></p>
+<ul>
+<li><code>intros</code>: move hyp/vars from goat to ctx</li>
+<li><code>reflexivity</code>: finish proof when <code>lhs = rhs</code> in goal</li>
+<li><code>apply</code>: prove goal using hyp, lemma, constr.</li>
+<li><code>simpl</code>: simplify.</li>
+<li><code>rewrite</code>: use an equality in Hyp to rewrite the goal.</li>
+<li><code>symmetry</code>: swaps lhs and rhs</li>
+<li><code>unfold</code>: replace const with its rhs in goal</li>
+<li><code>destruct... as...</code>: case analysis. <code>destruct... eqn:...</code> records the result of the case analysis and adds it to the context.</li>
+<li><code>induction... as...</code>: induction</li>
+<li><code>injection</code>: injectivity on equalities</li>
+<li><code>discriminate</code>: reason by disjointness of constructors</li>
+<li><code>assert (H: e)</code>: introduce a lemma locally</li>
+<li><code>generalize dependent x</code>: move x (and all dependencies) from ctx to goal.</li>
+<li><code>apply ... in H</code>: forward reasoning by applying to hyp in ctx</li>
+<li><code>simpl in H.</code></li>
+<li><code>rewrite ... in H</code></li>
+<li><code>symmetry in H</code></li>
+<li><code>unfold... in H</code></li>
+</ul>
+<hr />
+<ul>
+<li><code>rewrite (plus_comm x y)</code> applies plus_comm with the arguments x, y instantiated.</li>
+<li><code>apply some_lema with (x := 42)</code> applies the lemma with x instantiated as 42.</li>
+</ul>
+<hr />
+<ul>
+<li>When proving correctness of the tail recursive rev. Induct on the first list. You’ll need a lemma that generalizes over the accumulator. When trying to prove that lemma, make sure you quantify over all accumulators (So don’t intro it). This is important to be able to apply the IH.</li>
+</ul>
+<hr />
+<p><a href="https://github.com/arthuraa/cufp-2015-tutorial">CUFP 2015</a></p>
+<ul>
+<li><code>intros</code>: Introduce variables into the context, giving them names.</li>
+<li><code>simpl</code>: Simplify the goal.</li>
+<li><code>reflexivity</code>: Prove that some expression <code>x</code> is equal to itself.</li>
+<li><code>destruct</code>: Consider all possible constructors of an inductive data type, generating subgoals that need to be solved separately.</li>
+<li><code>rewrite</code>: Replace one side of an equation by the other.</li>
+<li><code>apply</code>: Suppose that the current goal is <code>Q</code>. If <code>H : Q</code>, then <code>apply H</code> solves the goal. If <code>H : P -&gt; Q</code>, then <code>apply H</code> replaces <code>Q</code> by <code>P</code> in the goal. If <code>H</code> has multiple hypotheses, <code>H : P1 -&gt; P2 -&gt; ... -&gt; Pn -&gt; Q</code>, then <code>apply H</code> generates one subgoal for each <code>Pi</code>.</li>
+<li><code>induction</code>: Argue by induction. It works as <code>destruct</code>, but additionally giving us an inductive hypothesis in the inductive case.</li>
+<li><code>discriminate</code>: Looks for an equation between terms starting with different constructors, and solves the current goal.</li>
+<li><code>revert</code>: The opposite of <code>intros</code>; removes variables and hypotheses from the context, putting them back in the goal.</li>
+<li><code>clear</code>: Remove hypotheses from the context (ex. needed to simplify the IH).</li>
+<li><code>unfold</code>: Calling <code>unfold foo</code> expands the definition of <code>foo</code> in the goal.</li>
+<li><code>trivial</code>: solves simple goals through <code>reflexivity</code> and by looking for assumptions in the context that apply directly. If it cannot solve the goal, it does nothing.</li>
+<li><code>;</code>: An expression such as <code>foo; bar</code> first calls <code>foo</code>, then calls <code>bar</code> on all generated subgoals. A common idiom is <code>foo; trivial</code>, which solves the trivial subgoals and does nothing on the remaining ones.</li>
+<li><code>try</code>: Calling <code>try foo</code> tries to execute <code>foo</code>, doing nothing if <code>foo</code> raises any errors. In particular, if <code>foo</code> is a terminating tactic such as <code>discriminate</code>, <code>try foo</code> attempts to solve the goal, and does nothing if it fails.</li>
+<li><code>destruct ... eqn: ...</code>: Do case analysis on an expression while generating an equation.</li>
+<li><code>lia</code>: Short for “Linear Integer Arithmetic”; tries to solve goals that involve linear systems of inequalites on integers.</li>
+<li><code>specialize</code>: Instantiate a universally quantified hypothesis</li>
+<li><code>assert</code>: Introduce a new hypothesis in the context, requiring us to prove that it holds. The curly braces <code>{}</code> allow us to focus on the current subgoal, like <code>+</code> and <code>-</code>.</li>
+</ul>
+<footer>
+</footer>
+</div>
+</body>
+</html>

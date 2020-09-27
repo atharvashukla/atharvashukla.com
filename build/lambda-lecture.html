@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Atharva Shukla</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <div id="wrapper">
+      <header>
+      </header><h1 id="the-lambda-lecture">The Lambda Lecture</h1>
+<pre><code>#lang lazy
+
+(define (pair A B)
+  (λ (sel)
+    (sel A B)))
+
+
+(define (fst A B) A)
+(define (snd A B) B)
+
+
+(define (cnd C T E) ;; laziness
+  (C T E))
+
+
+(define (truth A B) A)
+(define (falsity A B) B)
+
+;; ---
+
+(define Z (λ (f) (λ (x) x)))
+
+(define (succ N)
+  (λ (f)
+    (λ (x)
+      (f ((N f) x)))))
+
+
+;; I/O
+(define (n-&gt;i N) ((N add1) 0))
+(define (i-&gt;n i) (if (zero? i) Z (succ (i-&gt;n (sub1 i)))))
+
+(define ((add M) N) ;; curried
+  ((M succ) N))
+
+(define ((mult M) N)
+  ((M (add N)) Z))
+
+(define (Z? N)
+  ((N (lambda (_) falsity)) truth))
+
+#|
+
+  &lt; 0, 0 &gt; 0 copy snd, succ snd
+  &lt; 0, 1 &gt; 1
+  &lt; 1, 2 &gt; 2
+  &lt; 2, 3 &gt; 3
+  &lt; 3, 4 &gt; 4
+
+|#
+
+
+(define (pred N)
+  (((N (λ (p)
+         (pair (p snd)
+               (succ (p snd)))))
+    (pair Z Z))
+   fst))
+
+
+(define Y
+  (λ (g)
+    ((λ (f) (f f))
+     (λ (f) (g (f f))))))
+
+
+(define fact
+  (Y
+   (λ (fct)
+     (λ (n)
+       (cnd (Z? n)
+           (i-&gt;n 1)
+           ((mult n) (fct (pred n))))))))
+
+
+(n-&gt;i (fact (i-&gt;n 5)))
+; = 120</code></pre>
+<footer>
+</footer>
+</div>
+</body>
+</html>

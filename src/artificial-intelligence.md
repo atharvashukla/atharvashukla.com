@@ -434,8 +434,30 @@ END WHILE
 ```
 
 
+---
 
+A* pseudocode
 
+```
+Q is a priority queue of nodes, keyed by f() = g() + h() (true cost + heuristic)
+Closed list C is a hash table of states seen before (not nodes)
+   (Variant: Could maintain table of costs instead, throw out worse paths)
+A state contains all problem-specific information about a possible state of the world
+A node knows: true cost to get there, the state represents, 
+              the node that generated it (parent), its key in the priority queue
 
+Initialize priority queue Q with start node s (key is cost so far 0 + h() for cost-to-go)
+Initialize empty hash table for closed list
 
-
+While priority queue isn't empty, 
+    Remove head of priority queue a
+    If a is in closed list, continue
+    If a is the goal, return path-to-get-here(a) // Backtrack using parent field
+    Add a to the closed list
+        // It's possible but not sufficient to filter based on closed list here
+        Calculate neighbor's true cost to arrive (through a)
+        Calculate neighbor's key (using true cost and heuristic)
+        Set neighbor's parent to a
+        Add neighbor to the priority queu
+Return "not found"
+```
