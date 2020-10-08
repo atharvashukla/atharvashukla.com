@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>Atharva Shukla</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <div id="wrapper">
+      <header>
+      </header><h1 id="testing-with-mocha-and-chai-in-the-browser">Testing with Mocha and Chai in the Browser</h1>
+<h3 id="code-to-test.js"><code>code-to-test.js</code></h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">function</span> <span class="fu">add3</span>(z) {</span>
+<span id="cb1-2"><a href="#cb1-2"></a>    <span class="cf">return</span> z <span class="op">+</span> <span class="dv">3</span><span class="op">;</span></span>
+<span id="cb1-3"><a href="#cb1-3"></a>}</span></code></pre></div>
+<h3 id="tests.js"><code>tests.js</code></h3>
+<div class="sourceCode" id="cb2"><pre class="sourceCode js"><code class="sourceCode javascript"><span id="cb2-1"><a href="#cb2-1"></a><span class="kw">var</span> assert <span class="op">=</span> chai<span class="op">.</span><span class="at">assert</span></span>
+<span id="cb2-2"><a href="#cb2-2"></a></span>
+<span id="cb2-3"><a href="#cb2-3"></a>describe(<span class="st">&#39;testing add3&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-4"><a href="#cb2-4"></a>    it(<span class="st">&#39;add3 on 0 is 3&#39;</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb2-5"><a href="#cb2-5"></a>        assert(add3(<span class="dv">0</span>) <span class="op">===</span> <span class="dv">3</span>)<span class="op">;</span></span>
+<span id="cb2-6"><a href="#cb2-6"></a>    })<span class="op">;</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>})<span class="op">;</span></span></code></pre></div>
+<h3 id="test.html"><code>test.html</code></h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode xml"><code class="sourceCode xml"><span id="cb3-1"><a href="#cb3-1"></a><span class="kw">&lt;html&gt;</span></span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a><span class="kw">&lt;head&gt;</span></span>
+<span id="cb3-4"><a href="#cb3-4"></a>  <span class="kw">&lt;title&gt;</span>Mocha<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb3-5"><a href="#cb3-5"></a>  <span class="co">&lt;!-- CSS TO STYLE </span><span class="al">TEST</span><span class="co"> RESULTS --&gt;</span></span>
+<span id="cb3-6"><a href="#cb3-6"></a>  <span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span></span>
+<span id="cb3-7"><a href="#cb3-7"></a><span class="ot">        href=</span><span class="st">&quot;https://unpkg.com/mocha/mocha.css&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb3-8"><a href="#cb3-8"></a>  <span class="co">&lt;!-- </span><span class="al">TESTING</span><span class="co"> LIBRARY --&gt;</span></span>
+<span id="cb3-9"><a href="#cb3-9"></a>  <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://unpkg.com/mocha/mocha.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb3-10"><a href="#cb3-10"></a>  <span class="co">&lt;!-- ASSERTION LIBRARY --&gt;</span></span>
+<span id="cb3-11"><a href="#cb3-11"></a>  <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;https://unpkg.com/chai/chai.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb3-12"><a href="#cb3-12"></a><span class="kw">&lt;/head&gt;</span></span>
+<span id="cb3-13"><a href="#cb3-13"></a></span>
+<span id="cb3-14"><a href="#cb3-14"></a><span class="kw">&lt;body&gt;</span></span>
+<span id="cb3-15"><a href="#cb3-15"></a>  <span class="co">&lt;!-- </span><span class="al">TEST</span><span class="co"> SETUP --&gt;</span></span>
+<span id="cb3-16"><a href="#cb3-16"></a>  <span class="kw">&lt;script&gt;</span></span>
+<span id="cb3-17"><a href="#cb3-17"></a>    mocha.setup(&#39;bdd&#39;);</span>
+<span id="cb3-18"><a href="#cb3-18"></a>  <span class="kw">&lt;/script&gt;</span></span>
+<span id="cb3-19"><a href="#cb3-19"></a>  <span class="co">&lt;!-- CODE TO </span><span class="al">TEST</span><span class="co"> --&gt;</span></span>
+<span id="cb3-20"><a href="#cb3-20"></a>  <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;code-to-test.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb3-21"><a href="#cb3-21"></a>  <span class="co">&lt;!-- </span><span class="al">TEST</span><span class="co"> SUITE --&gt;</span></span>
+<span id="cb3-22"><a href="#cb3-22"></a>  <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;tests.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb3-23"><a href="#cb3-23"></a>  <span class="co">&lt;!-- RUNNING TESTS --&gt;</span></span>
+<span id="cb3-24"><a href="#cb3-24"></a>  <span class="kw">&lt;script&gt;</span></span>
+<span id="cb3-25"><a href="#cb3-25"></a>    window.onload = () =&gt; {</span>
+<span id="cb3-26"><a href="#cb3-26"></a>      mocha.run();</span>
+<span id="cb3-27"><a href="#cb3-27"></a>    };</span>
+<span id="cb3-28"><a href="#cb3-28"></a>  <span class="kw">&lt;/script&gt;</span></span>
+<span id="cb3-29"><a href="#cb3-29"></a>  <span class="co">&lt;!-- DISPLAYING TESTS --&gt;</span></span>
+<span id="cb3-30"><a href="#cb3-30"></a>  <span class="kw">&lt;div</span><span class="ot"> id=</span><span class="st">&quot;mocha&quot;</span><span class="kw">&gt;&lt;/div&gt;</span></span>
+<span id="cb3-31"><a href="#cb3-31"></a><span class="kw">&lt;/body&gt;</span></span>
+<span id="cb3-32"><a href="#cb3-32"></a></span>
+<span id="cb3-33"><a href="#cb3-33"></a><span class="kw">&lt;/html&gt;</span></span></code></pre></div>
+<p>Open <code>index.html</code> to see the test results.</p>
+<footer>
+</footer>
+</div>
+</body>
+</html>
