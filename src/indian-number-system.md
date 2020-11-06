@@ -1,4 +1,4 @@
-# Indian Number System
+# Indian Number Names
 
 
 | International Notation    | Indian Notation             | International Name  | Indian Name | Zeroes |

@@ -9,15 +9,16 @@
       <div id="wrapper">
       <header>
       </header><h1 id="typescript">Typescript</h1>
-<p>Some Packages:</p>
-<ul>
-<li>typescript</li>
-<li>chai</li>
-<li><span class="citation" data-cites="types/chai">@types/chai</span></li>
-<li>mocha</li>
-<li><span class="citation" data-cites="types/mocha">@types/mocha</span></li>
-<li>ts-mocha</li>
-</ul>
+<div class="sourceCode" id="cb1"><pre class="sourceCode zsh"><code class="sourceCode zsh"><span id="cb1-1"><a href="#cb1-1"></a><span class="kw">mkdir</span> new-project</span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="kw">cd</span> new-project</span>
+<span id="cb1-3"><a href="#cb1-3"></a>npm init -y</span>
+<span id="cb1-4"><a href="#cb1-4"></a>tsc --init --rootDir src --outDir dist --allowJs <span class="kw">true</span> --noImplicitAny <span class="kw">true</span> --sourceMap <span class="kw">true</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a>npm i --save-dev typescript ts-mocha ts-node chai mocha @types/node @types/chai @types/mocha</span>
+<span id="cb1-6"><a href="#cb1-6"></a><span class="kw">mkdir</span> src</span>
+<span id="cb1-7"><a href="#cb1-7"></a><span class="kw">mkdir</span> dist</span>
+<span id="cb1-8"><a href="#cb1-8"></a><span class="kw">cd</span> src</span>
+<span id="cb1-9"><a href="#cb1-9"></a><span class="kw">touch</span> hello.ts</span>
+<span id="cb1-10"><a href="#cb1-10"></a><span class="st">&#39;console.log(&quot;hello&quot;)&#39;</span> <span class="kw">&gt;</span> hello.ts</span></code></pre></div>
 <footer>
 </footer>
 </div>
