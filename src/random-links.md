@@ -5,3 +5,4 @@
 - [The Unabomber Trial: The Manifesto](https://www.washingtonpost.com/wp-srv/national/longterm/unabomber/manifesto.text.htm)
 - [Lindy effect](https://en.wikipedia.org/wiki/Lindy_effect)
 - [Sunk cost](https://en.wikipedia.org/wiki/Sunk_cost)
+- [lex and betty](https://www.youtube.com/watch?v=fCLI6kxFFTE)
