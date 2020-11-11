@@ -1,21 +1,21 @@
 # Algebra
 
 - Groups
-- subgroups
-- cyclic groups
-- cosets
+- Subgroups
+- Cyclic Groups
+- Cosets
 - Lagrange’s Theorem
-- normal subgroups
-- quotient groups
-- homomorphism of groups
-- basic isomorphism theorems
-- permutation groups
+- Normal Subgroups
+- Quotient Groups
+- Homomorphism of Groups
+- Basic Isomorphism Theorems
+- Permutation Groups
 - Cayley’s theorem
 - Rings
-- subrings and ideals
-- homomorphisms of rings
-- Integral domains
-- principal ideal domains
+- Subrings and Ideals
+- Homomorphisms of Rings
+- Integral Domains
+- Principal ideal domains
 - Euclidean domains and unique factorization domains
 - Fields
 - quotient fields
