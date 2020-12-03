@@ -38,5 +38,6 @@
 - [That's Life (Remastered 2008)](https://www.youtube.com/watch?v=TnlPtaPxXfc)
 - [On Melancholy Hill](https://www.youtube.com/watch?v=p00v9ZFhWJM)
 - [put your records on](https://www.youtube.com/watch?v=rjOhZZyn30k)
-- [walkin' on the sun](https://www.youtube.com/watch?v=LQj--Kjn0z8)
+- [walkin' on the sun](https://www.youtube.com/watch?v=LQj--Kjn0z8), [all star](https://www.youtube.com/watch?v=L_jWHffIx5E)
 - [tubthumping](https://www.youtube.com/watch?v=S_FKndlc-EM)
+- https://www.youtube.com/watch?v=8gkJxRsyvvw
