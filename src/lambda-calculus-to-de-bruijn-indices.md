@@ -1,6 +1,6 @@
-# Lambda Calculus to De Bruijn Compiler
+# Lambda Calculus to Lambda Calculus with De Bruijn Indices Compiler
 
-
+[https://en.wikipedia.org/wiki/De_Bruijn_index](https://en.wikipedia.org/wiki/De_Bruijn_index)
 
 ```
 #lang racket

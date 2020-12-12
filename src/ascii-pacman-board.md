@@ -1,10 +1,21 @@
 # ASCII Art for Pacman Grid Generation
 
+If you're text-based making pacman, you can just copy this and write a simple program to generate a board that follows your data definition.
 
-If you're making pacman, you can just copy this and write a simple program to generate a board that follows your data definition.
-
-
-
+```
+Wall                 █
+Empty space          ░
+Dot                  ·
+Power                ¶
+Blinky               ♥
+Pinky                ♦
+Inky                 ♣
+Clyde                ♠
+Pacman facing right  ►
+Pacman facing left   ◄
+Pacman facing up     ▲
+Pacman facing down   ▼
+```
 
 ```
 █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █
@@ -39,6 +50,3 @@ If you're making pacman, you can just copy this and write a simple program to ge
 █ · · · · · · · · · · · · · · · · · · · · · · · · · · █
 █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █ █
 ```
-Wall: █; Empty space: ░; Dot: ·; Power: ¶
-
-Blinky: ♥;  Pinky: ♦;  Inky: ♣;  Clyde: ♠; Pacman facing right: ►; Pacman facing left: ◄; Pacman facing up: ▲; Pacman facing down: ▼

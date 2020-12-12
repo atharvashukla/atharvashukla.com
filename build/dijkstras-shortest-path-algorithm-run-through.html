@@ -8,37 +8,7 @@
    <body>
       <div id="wrapper">
       <header>
-      </header><h1 id="artificial-intelligence">Artificial Intelligence</h1>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/A*_search_algorithm">A*</a>
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/Shakey_the_robot">Shakey</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Nils_John_Nilsson">Nils Nilsson</a></li>
-<li>Bertram Raphael: suggested adding g(n) to h(n)</li>
-<li>Peter Hart: <a href="https://en.wikipedia.org/wiki/Admissible_heuristic">admissibility</a> and <a href="https://en.wikipedia.org/wiki/Consistent_heuristic">consistency</a></li>
-</ul></li>
-</ul>
-<p><strong><a href="https://en.wikipedia.org/wiki/Best-first_search">Best-first search</a></strong> is a search algorithm which explores a graph by expanding the most promising node chosen according to a specified rule.</p>
-<blockquote>
-<p>Estimating the promise of node n by a “heuristic evaluation function f(n) which, in general, may depend on the description of n, the description of the goal, the information gathered by the search up to that point, and most important, on any extra knowledge about the problem domain.”</p>
-</blockquote>
-<p>– Judea Pearl</p>
-<p>Search evaluation function for A*: f(n) = g(n) + h(n)</p>
-<ul>
-<li><code>f(n)</code> = the evaluation function</li>
-<li><code>g(n)</code> = the cost from the start node to the current node</li>
-<li><code>h(n)</code> = estimated cost from current node to goal</li>
-</ul>
-<p><strong><a href="https://en.wikipedia.org/wiki/Admissible_heuristic">Admissible</a></strong>: if it never overestimates the cost of reaching the goal, i.e. the cost it estimates to reach the goal is not higher than the lowest possible cost from the current point in the path</p>
-<ul>
-<li>n is a node</li>
-<li>h is a heuristic</li>
-<li>h(n) is cost indicated by h to reach a goal from n</li>
-<li>h*(n) is the optimal cost to reach a goal from n</li>
-<li>h(n) is admissible if, ∀ n h(n) &lt;= h*(n)</li>
-</ul>
-<p>2 admissible heuristics for <a href="https://en.wikipedia.org/wiki/Fifteen_puzzle">Fifteen puzzle</a> problem: - <a href="https://en.wikipedia.org/wiki/Hamming_distance">Hamming distance</a> - <a href="https://en.wikipedia.org/wiki/Manhattan_distance">Manhattan distance</a></p>
-<p><strong><a href="https://en.wikipedia.org/wiki/Consistent_heuristic">Consistent heuristic</a></strong>: if its estimate is always less than or equal to the estimated distance from any neighbouring vertex to the goal, plus the cost of reaching that neighbour.</p>
+      </header><h1 id="a-run-through-of-dijkstras-shortest-path-algorithm">A run-through of Dijkstra’s shortest path algorithm</h1>
 <p><a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm"><strong>Dijkstra’s shortest path algorithm</strong></a></p>
 <pre><code>A--6---B\  
 |     /| 5 
@@ -295,29 +265,6 @@ WHILE vertices remain unvisited
    NEXT unvisited neighbour
    Add the current vertex to the list of vertices
 END WHILE</code></pre>
-<hr />
-<p>A* pseudocode</p>
-<pre><code>Q is a priority queue of nodes, keyed by f() = g() + h() (true cost + heuristic)
-Closed list C is a hash table of states seen before (not nodes)
-   (Variant: Could maintain table of costs instead, throw out worse paths)
-A state contains all problem-specific information about a possible state of the world
-A node knows: true cost to get there, the state represents, 
-              the node that generated it (parent), its key in the priority queue
-
-Initialize priority queue Q with start node s (key is cost so far 0 + h() for cost-to-go)
-Initialize empty hash table for closed list
-
-While priority queue isn&#39;t empty, 
-    Remove head of priority queue a
-    If a is in closed list, continue
-    If a is the goal, return path-to-get-here(a) // Backtrack using parent field
-    Add a to the closed list
-        // It&#39;s possible but not sufficient to filter based on closed list here
-        Calculate neighbor&#39;s true cost to arrive (through a)
-        Calculate neighbor&#39;s key (using true cost and heuristic)
-        Set neighbor&#39;s parent to a
-        Add neighbor to the priority queu
-Return &quot;not found&quot;</code></pre>
 <footer>
 </footer>
 </div>

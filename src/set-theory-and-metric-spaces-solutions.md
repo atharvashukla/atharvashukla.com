@@ -1,17 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta charset="utf-8">
-      <title>Atharva Shukla</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-   </head>
-   <body>
-      <div id="wrapper">
-      <header>
-      </header><h1 id="kaplansky">Kaplansky</h1>
-<pre><code>Set Theory and Metric Spaces - Irving Kaplansky
+# Incomplete Solutions to Set Theory and Metric Spaces by Irving Kaplansky
 
-
+```
 1 Basic Set Theory
 
 1.1 Inclusion
@@ -241,13 +230,13 @@ LHS = RHS
 Q.4
 Prove that (A ⋂ B) ⋃ C = A ⋂ (B ⋃ C) if and only if C ⊂ A.
 
-[(A ⋂ B) ⋃ C = A ⋂ (B ⋃ C)] =&gt; C ⊂ A
+[(A ⋂ B) ⋃ C = A ⋂ (B ⋃ C)] => C ⊂ A
 ≡ {Definition of Set Union, Definition of Set Intersection}
-[(e ∈ A ∧ e ∈ B) ∨ (e ∈ C) = (e ∈ A) ∧ (e ∈ B ∨ e ∈ C)] =&gt; C ⊂ A
+[(e ∈ A ∧ e ∈ B) ∨ (e ∈ C) = (e ∈ A) ∧ (e ∈ B ∨ e ∈ C)] => C ⊂ A
 ≡ {Definition of Subset}
-[(e ∈ A ∧ e ∈ B) ∨ (e ∈ C) = (e ∈ A) ∧ (e ∈ B ∨ e ∈ C)] =&gt; [e ∈ C =&gt; e ∈ A]
+[(e ∈ A ∧ e ∈ B) ∨ (e ∈ C) = (e ∈ A) ∧ (e ∈ B ∨ e ∈ C)] => [e ∈ C => e ∈ A]
 ≡ {Exportation} 
-[(e ∈ A ∧ e ∈ B) ∨ (e ∈ C) = (e ∈ A) ∧ (e ∈ B ∨ e ∈ C)] ∧ e ∈ C =&gt; e ∈ A
+[(e ∈ A ∧ e ∈ B) ∨ (e ∈ C) = (e ∈ A) ∧ (e ∈ B ∨ e ∈ C)] ∧ e ∈ C => e ∈ A
 
 C1. (e ∈ A ∧ e ∈ B) ∨ (e ∈ C) = (e ∈ A) ∧ (e ∈ B ∨ e ∈ C)
 C2. e ∈ C
@@ -387,11 +376,11 @@ e ∈ A ∨ ∀i: ( e ∈ Bᵢ )
 ⋃ᵢ ( A ⋂ Bᵢ )
 
 (c)
-⋃ᵢ [ Aᵢ ] )&#39;
-e ∈ ( ⋃ᵢ ( Aᵢ ) )&#39;
+⋃ᵢ [ Aᵢ ] )'
+e ∈ ( ⋃ᵢ ( Aᵢ ) )'
 e ∉ ( ⋃ᵢ ( Aᵢ ) )
-e ∈ ( ⋂ᵢ ( Aᵢ )&#39;) 
-⋂ᵢ [ ( Aᵢ )&#39; ]
+e ∈ ( ⋂ᵢ ( Aᵢ )') 
+⋂ᵢ [ ( Aᵢ )' ]
 
 (d)
 ( ⋂ᵢ [ Aᵢ ] )’ 
@@ -424,22 +413,22 @@ TODO
 Q.10
 Call a subset B of a set A cofinite if the complement of B in A is finite. If B and C are cofinite subsets of A, prove that B ⋂ C is cofinite. 
 
-Definition: If B ⊂ A then B is cofinite in A if A ∧ B&#39; if finite
+Definition: If B ⊂ A then B is cofinite in A if A ∧ B' if finite
 
 More formally:
 
 fin(X) is true if X is finite. 
-cof(X, Y) is true if X is cofinite in Y. cof(X, Y) ⟺ (X ⊂ Y) ∧ fin(Y ∧ X&#39;)
+cof(X, Y) is true if X is cofinite in Y. cof(X, Y) ⟺ (X ⊂ Y) ∧ fin(Y ∧ X')
 
 cof(B, A) ∧ cof(C, A) ⟹ cof(B ⋂ C, A)
 
 cof(B, A) ∧ cof(C, A)
 ≡ {Definition of cof}
-[(B ⊂ A) ∧ fin(A ∧ B&#39;)] ∧ [(C ⊂ A) ∧ fin(A ∧ C&#39;)]
+[(B ⊂ A) ∧ fin(A ∧ B')] ∧ [(C ⊂ A) ∧ fin(A ∧ C')]
 ≡ {Theorem SubAnd}
-[((B ∧ C) ⊂ A) ∧ fin(A ∧ B&#39;) ∧ fin(A ∧ C&#39;)]
+[((B ∧ C) ⊂ A) ∧ fin(A ∧ B') ∧ fin(A ∧ C')]
 ≡ {Theorem FiniteAnd}
-[((B ∧ C) ⊂ A) ∧ fin(A ∧ (B&#39; ∧ C&#39;))]
+[((B ∧ C) ⊂ A) ∧ fin(A ∧ (B' ∧ C'))]
 ≡ {Definition of cof}
 cof(B ⋂ C, A)
 
@@ -642,9 +631,5 @@ Theorem SD4: Symmetric Difference is Associative
 A + (B + C)
 
 
-</code></pre>
-<footer>
-</footer>
-</div>
-</body>
-</html>
+
+```

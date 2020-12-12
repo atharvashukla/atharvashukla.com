@@ -1,40 +1,4 @@
-# Artificial Intelligence
-
-- [A\*](https://en.wikipedia.org/wiki/A*_search_algorithm)
-  - [Shakey](https://en.wikipedia.org/wiki/Shakey_the_robot)
-  - [Nils Nilsson](https://en.wikipedia.org/wiki/Nils_John_Nilsson)
-  - Bertram Raphael: suggested adding g(n) to h(n)
-  - Peter Hart: [admissibility](https://en.wikipedia.org/wiki/Admissible_heuristic) and [consistency](https://en.wikipedia.org/wiki/Consistent_heuristic)
-
-
-**[Best-first search](https://en.wikipedia.org/wiki/Best-first_search)** is a search algorithm which explores a graph by expanding the most promising node chosen according to a specified rule.
-
-> Estimating the promise of node n by a "heuristic evaluation function f(n) which, in general, may depend on the description of n, the description of the goal, the information gathered by the search up to that point, and most important, on any extra knowledge about the problem domain."
-
--- Judea Pearl
-
-
-Search evaluation function for A\*: f(n) = g(n) + h(n)
-
-- `f(n)` = the evaluation function
-- `g(n)` = the cost from the start node to the current node
-- `h(n)` = estimated cost from current node to goal
-
-**[Admissible](https://en.wikipedia.org/wiki/Admissible_heuristic)**: if it never overestimates the cost of reaching the goal, i.e. the cost it estimates to reach the goal is not higher than the lowest possible cost from the current point in the path
-
-- n is a node
-- h is a heuristic
-- h(n) is cost indicated by h to reach a goal from n
-- h\*(n) is the optimal cost to reach a goal from n
-- h(n) is admissible if, ∀ n h(n) <= h\*(n)
-
-2 admissible heuristics for [Fifteen puzzle](https://en.wikipedia.org/wiki/Fifteen_puzzle) problem: 
-- [Hamming distance](https://en.wikipedia.org/wiki/Hamming_distance)
-- [Manhattan distance](https://en.wikipedia.org/wiki/Manhattan_distance)
-
-
-**[Consistent heuristic](https://en.wikipedia.org/wiki/Consistent_heuristic)**: if its estimate is always less than or equal to the estimated distance from any neighbouring vertex to the goal, plus the cost of reaching that neighbour.
-
+# A run-through of Dijkstra's shortest path algorithm
 
 [**Dijkstra's shortest path algorithm**](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm)
 
@@ -431,33 +395,4 @@ WHILE vertices remain unvisited
    NEXT unvisited neighbour
    Add the current vertex to the list of vertices
 END WHILE
-```
-
-
----
-
-A* pseudocode
-
-```
-Q is a priority queue of nodes, keyed by f() = g() + h() (true cost + heuristic)
-Closed list C is a hash table of states seen before (not nodes)
-   (Variant: Could maintain table of costs instead, throw out worse paths)
-A state contains all problem-specific information about a possible state of the world
-A node knows: true cost to get there, the state represents, 
-              the node that generated it (parent), its key in the priority queue
-
-Initialize priority queue Q with start node s (key is cost so far 0 + h() for cost-to-go)
-Initialize empty hash table for closed list
-
-While priority queue isn't empty, 
-    Remove head of priority queue a
-    If a is in closed list, continue
-    If a is the goal, return path-to-get-here(a) // Backtrack using parent field
-    Add a to the closed list
-        // It's possible but not sufficient to filter based on closed list here
-        Calculate neighbor's true cost to arrive (through a)
-        Calculate neighbor's key (using true cost and heuristic)
-        Set neighbor's parent to a
-        Add neighbor to the priority queu
-Return "not found"
 ```
