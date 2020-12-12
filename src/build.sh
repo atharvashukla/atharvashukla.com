@@ -18,7 +18,7 @@ do
         fi
     fi
 done
-echo " ｜ " >> index_tmp.md
+echo "\n- " >> index_tmp.md
 
 for md_file in $files
 do
