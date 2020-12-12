@@ -14,7 +14,7 @@ do
         doc_title=`grep -m 1 "^# .*" $md_file | sed s/"# "//g`
         if [[ -n "$doc_title" ]]
         then
-            echo '- [$doc_title]($file_base.html)\n' >> index_tmp.md
+            echo '- [$doc_title]\($file_base.html\)\n' >> index_tmp.md
         fi
     fi
 done
