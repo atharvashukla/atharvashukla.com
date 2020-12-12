@@ -40,5 +40,5 @@ do
     rm tmp.html
 done
 
-rm index_tmp.md
+# rm index_tmp.md
 mv ../build/index_tmp.html ../build/index.html
