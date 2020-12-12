@@ -14,11 +14,11 @@ do
         doc_title=`grep -m 1 "^# .*" $md_file | sed s/"# "//g`
         if [[ -n "$doc_title" ]]
         then
-            echo " ｜ [$doc_title]($file_base.html)" >> index_tmp.md
+            echo "\n- [$doc_title]($file_base.html)" >> index_tmp.md
         fi
     fi
 done
-echo "\n- " >> index_tmp.md
+# echo "\n- " >> index_tmp.md
 
 for md_file in $files
 do
