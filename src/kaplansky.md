@@ -1,4 +1,4 @@
-# Incomplete Solutions to Set Theory and Metric Spaces by Irving Kaplansky
+# Solutions to Set Theory and Metric Spaces by Irving Kaplansky
 
 ```
 1 Basic Set Theory
