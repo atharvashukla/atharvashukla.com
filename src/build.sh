@@ -32,7 +32,9 @@ do
 
     pandoc $md_file > tmp.html
 
-    cat head.html tmp.html foot.html | \
+    # cat head.html tmp.html foot.html | \
+    
+    cat tmp.html | \
     sed "s/{{FILE}}/$file_base/g" |    \
     sed "s/{{TITLE}}/$doc_title/g"     \
         > ../build/$file_base.html
