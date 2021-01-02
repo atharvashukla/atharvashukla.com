@@ -2,8 +2,7 @@
 
 rm ../build/*.html
 
-# cat index.md > index_tmp.md
-
+cat index.md > index_tmp.md
 
 files=`ls -v *.md`
 
