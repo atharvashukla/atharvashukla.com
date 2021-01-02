@@ -1,4 +1,4 @@
-# Complete Solutions to How to Design Programs, Second Edition
+# Solutions to How to Design Programs, Second Edition
 
 [`001`](https://github.com/atharvashukla/htdp/blob/master/src/001.rkt),
 [`002`](https://github.com/atharvashukla/htdp/blob/master/src/002.rkt),
