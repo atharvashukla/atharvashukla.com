@@ -5,31 +5,34 @@
 
 ### 1.1 Inclusion
 
-- Q.1 A set A has the property that A ⊂ B holds for any set B. Prove that A = Ø.
-  - “A set A has the property that A ⊂ B holds for any set B” is assumed to be true in the problem statement. Consider the case where B = Ø. A has to be Ø because the only subset of Ø is Ø. 
-- Q.2
-  - Let A, B and C be sets satisfying A ⊂ B, B ⊂ C, and C ⊂ A. Prove that A = B = C.
+**Q.1 A set A has the property that A ⊂ B holds for any set B. Prove that A = Ø.**
 
-  C1. ( A ⊂ B ) 
-
-  C2. ( B ⊂ C )
-
-  C3. ( C ⊂ A )
+"A set A has the property that A ⊂ B holds for any set B" is assumed to be true in the problem statement. Consider the case where B = Ø. A has to be Ø because the only subset of Ø is Ø. 
 
 
-  D1. ( B ⊂ A ) {Subset Relation is Transitive on C1, C2}
 
-  D2. ( C ⊂ B ) {Subset Relation is Transitive on C3, C1}
+**Q.2 Let A, B and C be sets satisfying A ⊂ B, B ⊂ C, and C ⊂ A. Prove that A = B = C.**
 
-  D3. ( A ⊂ C ) {Subset Relation is Transitive on C1, C2}
+C1. ( A ⊂ B ) 
+
+C2. ( B ⊂ C )
+
+C3. ( C ⊂ A )
 
 
-  D4. A = B {Definition 2 of Set Equality on C1, D1}
-  
-  D5. B = C {Definition 2 of Set Equality on C2, D2}
-  
-  D6. C = A {Definition 2 of Set Equality on C3, D3}
-  
+D1. ( B ⊂ A ) {Subset Relation is Transitive on C1, C2}
+
+D2. ( C ⊂ B ) {Subset Relation is Transitive on C3, C1}
+
+D3. ( A ⊂ C ) {Subset Relation is Transitive on C1, C2}
+
+
+D4. A = B {Definition 2 of Set Equality on C1, D1}
+
+D5. B = C {Definition 2 of Set Equality on C2, D2}
+
+D6. C = A {Definition 2 of Set Equality on C3, D3}
+
 
 A = B = C 
 Subset Relation is Transitive
