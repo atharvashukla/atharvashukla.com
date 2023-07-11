@@ -1,2 +1,1 @@
 # atharvashukla.com
-Personal website
