@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Podcast Recommendations</title>
+    <style>
+      .podcasts {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+        padding: 1rem;
+      }
+      .podcast {
+        display: grid;
+        gap: 0.5rem;
+        border: 1px solid #333;
+        border-radius: 5px;
+        padding: 1rem;
+        transition: background-color 0.3s ease;
+      }
+      .podcast:hover {
+        background-color: #eee;
+      }
+      .podcast a {
+        color: #333;
+        text-decoration: none;
+      }
+      .podcast a:hover {
+        color: #007bff;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Podcast Recommendations</h1>
+    <p>
+      I've spent countless hours exploring a wide array of podcasts. These are
+      the ones that I keep coming back to. They've expanded my thinking and
+      provided a wealth of knowledge and insights. Hope you find these podcasts
+      as captivating as I do.
+    </p>
+    <div class="podcasts">
+      <div class="podcast">
+        <img src="my-first-million.jpeg" alt="My first Million podcast" />
+        <a href="https://www.mfmpod.com/"
+          >My First Million | Shaan Puri, Sam Parr</a
+        >
+      </div>
+
+      <div class="podcast">
+        <img src="founders.jpeg" alt="Founders podcast" />
+        <a href="https://founders.simplecast.com/">Founders | David Senra</a>
+      </div>
+
+      <div class="podcast">
+        <img src="lex-fridman.jpeg" alt="Lex Fridman podcast" />
+        <a href="https://lexfridman.com/podcast/">Lex Fridman</a>
+      </div>
+
+      <div class="podcast">
+        <img src="dan-carlin.jpeg" alt="Dan Carlin" />
+        <a href="https://www.dancarlin.com/">Dan Carlin</a>
+      </div>
+
+      <div class="podcast">
+        <img src="all-in.png" alt="All-In podcast" />
+        <a href="https://www.allinpodcast.co/"
+          >All-In | Chamath Palihapitiya, Jason Calacanis, David Sacks & David
+          Friedberg</a
+        >
+      </div>
+
+      <div class="podcast">
+        <img src="wtf-is.jpg" alt="WTF is podcast" />
+        <a href="https://www.youtube.com/@nikhil.kamath"
+          >WTF is | Nikhil Kamath</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
