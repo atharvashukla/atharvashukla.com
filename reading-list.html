@@ -1,13 +1,3475 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reading List</title>
-</head>
-<body>
+<html>
+  <head>
+    <style>
+      .book-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start; /* Aligns the book cards to the start */
+        gap: 20px;
+      }
+
+      .book-card {
+        width: 220px; /* Sets a fixed width for the book card */
+        border: 1px solid #ccc;
+        margin: 10px;
+        padding: 20px;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.2);
+        text-align: center;
+      }
+
+      .book-card img {
+        max-width: 100px;
+        max-height: 100px;
+        margin: 0 auto;
+      }
+
+      .book-title {
+        margin: 10px 0;
+        font-size: 18px;
+        font-weight: bold;
+      }
+
+      .book-author,
+      .book-isbn {
+        margin: 0;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
     <h1>Reading List</h1>
-    <img height="200px" src="./rockefeller.jpeg" alt="rockefeller">
-    <img height="200px" src="./ford.jpeg" alt="ford">
-</body>
+    <div class="book-grid">
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/510K2KR+o6L._SL160_.jpg"
+          alt="Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future"
+        />
+        <h2 class="book-title">
+          Elon Musk: Tesla, SpaceX, and the Quest for a Fantastic Future
+        </h2>
+        <p class="book-author">Vance, Ashlee</p>
+        <p class="book-isbn">9780062301253</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41zsK0xIKnL._SL160_.jpg"
+          alt="Jackie Cochran: An Autobiography"
+        />
+        <h2 class="book-title">Jackie Cochran: An Autobiography</h2>
+        <p class="book-author">
+          Authors: Jacqueline Cochran - Maryann Bucknum Brinley
+        </p>
+        <p class="book-isbn">9780553052114</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51VMVN29jaS._SL160_.jpg"
+          alt="Unstoppable: Siggi B. Wilzig's Astonishing Journey from Auschwitz Survivor and Penniless Immigrant to Wall Street Legend"
+        />
+        <h2 class="book-title">
+          Unstoppable: Siggi B. Wilzig's Astonishing Journey from Auschwitz
+          Survivor and Penniless Immigrant to Wall Street Legend
+        </h2>
+        <p class="book-author">Greene, Joshua M.</p>
+        <p class="book-isbn">9781647222154</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51tPfIH9wsL._SL160_.jpg"
+          alt="Beyond Possible: One Man, Fourteen Peaks, and the Mountaineering Achievement of a Lifetime"
+        />
+        <h2 class="book-title">
+          Beyond Possible: One Man, Fourteen Peaks, and the Mountaineering
+          Achievement of a Lifetime
+        </h2>
+        <p class="book-author">Purja, Nims</p>
+        <p class="book-isbn">9781426222535</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51wL-Hc+m2L._SL160_.jpg"
+          alt="One from Many: VISA and the Rise of Chaordic Organization"
+        />
+        <h2 class="book-title">
+          One from Many: VISA and the Rise of Chaordic Organization
+        </h2>
+        <p class="book-author">Hock, Dee</p>
+        <p class="book-isbn">9781576753323</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41HnE3y2tCL._SL160_.jpg"
+          alt="American Rascal: How Jay Gould Built Wall Street's Biggest Fortune"
+        />
+        <h2 class="book-title">
+          American Rascal: How Jay Gould Built Wall Street's Biggest Fortune
+        </h2>
+        <p class="book-author">Steinmetz, Greg</p>
+        <p class="book-isbn">9781982107406</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41NKpukFh-L._SL160_.jpg"
+          alt="The HP Way: How Bill Hewlett and I Built Our Company (Collins Business Essentials)"
+        />
+        <h2 class="book-title">
+          The HP Way: How Bill Hewlett and I Built Our Company (Collins Business
+          Essentials)
+        </h2>
+        <p class="book-author">Packard, David</p>
+        <p class="book-isbn">9780060845797</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51yg1XTLAAL._SL160_.jpg"
+          alt="Zeckendorf: The autobiograpy of the man who played a real-life game of Monopoly and won the largest real estate empire in history."
+        />
+        <h2 class="book-title">
+          Zeckendorf: The autobiograpy of the man who played a real-life game of
+          Monopoly and won the largest real estate empire in history.
+        </h2>
+        <p class="book-author">Zeckendorf, William</p>
+        <p class="book-isbn">9781684116942</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/514QCTIIfuL._SL160_.jpg"
+          alt="Walt Disney: The Biography"
+        />
+        <h2 class="book-title">Walt Disney: The Biography</h2>
+        <p class="book-author">Neal Gabler</p>
+        <p class="book-isbn">9781845136741</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51IXLLfr6FL._SL160_.jpg"
+          alt="The Wizard of Menlo Park: How Thomas Alva Edison Invented the Modern World"
+        />
+        <h2 class="book-title">
+          The Wizard of Menlo Park: How Thomas Alva Edison Invented the Modern
+          World
+        </h2>
+        <p class="book-author">Stross, Randall E.</p>
+        <p class="book-isbn">9781400047635</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/517GRrgoiZL._SL160_.jpg"
+          alt="The Patriarch: The Remarkable Life and Turbulent Times of Joseph P. Kennedy"
+        />
+        <h2 class="book-title">
+          The Patriarch: The Remarkable Life and Turbulent Times of Joseph P.
+          Kennedy
+        </h2>
+        <p class="book-author">Nasaw, David</p>
+        <p class="book-isbn">9780143124078</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/416xdI3pmdS._SL160_.jpg"
+          alt="Steve Jobs"
+        />
+        <h2 class="book-title">Steve Jobs</h2>
+        <p class="book-author">Isaacson, Walter</p>
+        <p class="book-isbn">9781982176860</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51Lq04BpjVL._SL160_.jpg"
+          alt="Made in America: Mi Historia / Made In America: My History (Spanish Edition)"
+        />
+        <h2 class="book-title">
+          Made in America: Mi Historia / Made In America: My History (Spanish
+          Edition)
+        </h2>
+        <p class="book-author">Walton, Sam</p>
+        <p class="book-isbn">9780525564898</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41EzDV4FgwL._SL160_.jpg"
+          alt="Grinding It Out: The Making of McDonald's"
+        />
+        <h2 class="book-title">Grinding It Out: The Making of McDonald's</h2>
+        <p class="book-author">Kroc, Ray</p>
+        <p class="book-isbn">9781250130280</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51ndT78E9BL._SL160_.jpg"
+          alt="The Intel Trinity: How Robert Noyce, Gordon Moore, and Andy Grove Built the World's Most Important Company"
+        />
+        <h2 class="book-title">
+          The Intel Trinity: How Robert Noyce, Gordon Moore, and Andy Grove
+          Built the World's Most Important Company
+        </h2>
+        <p class="book-author">Malone, Michael S.</p>
+        <p class="book-isbn">9780062226761</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41FoyJVr-lL._SL160_.jpg"
+          alt="I Invented the Modern Age: The Rise of Henry Ford"
+        />
+        <h2 class="book-title">
+          I Invented the Modern Age: The Rise of Henry Ford
+        </h2>
+        <p class="book-author">Snow, Richard</p>
+        <p class="book-isbn">9781451645583</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41TaYdvAuFL._SL160_.jpg"
+          alt="Shoe Dog: A Memoir by the Creator of Nike"
+        />
+        <h2 class="book-title">Shoe Dog: A Memoir by the Creator of Nike</h2>
+        <p class="book-author">Knight, Phil</p>
+        <p class="book-isbn">9781501135910</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51jNreaVCHL._SL160_.jpg"
+          alt="AUTONOMY"
+        />
+        <h2 class="book-title">AUTONOMY</h2>
+        <p class="book-author">Burns, Lawrence</p>
+        <p class="book-isbn">9780062661135</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51MaryuxKRL._SL160_.jpg"
+          alt="The Accidental Billionaires: The Founding of Facebook: A Tale of Sex, Money, Genius and Betrayal"
+        />
+        <h2 class="book-title">
+          The Accidental Billionaires: The Founding of Facebook: A Tale of Sex,
+          Money, Genius and Betrayal
+        </h2>
+        <p class="book-author">Mezrich, Ben</p>
+        <p class="book-isbn">9780307740984</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51gFt86kFAL._SL160_.jpg"
+          alt="Leonardo da Vinci"
+        />
+        <h2 class="book-title">Leonardo da Vinci</h2>
+        <p class="book-author">Isaacson, Walter</p>
+        <p class="book-isbn">9781501139161</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51YuHCz4WLL._SL160_.jpg"
+          alt="Titan: The Life of John D. Rockefeller, Sr."
+        />
+        <h2 class="book-title">Titan: The Life of John D. Rockefeller, Sr.</h2>
+        <p class="book-author">Chernow, Ron</p>
+        <p class="book-isbn">9781400077304</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51BgKxKjkWL._SL160_.jpg"
+          alt="The Everything Store: Jeff Bezos and the Age of Amazon"
+        />
+        <h2 class="book-title">
+          The Everything Store: Jeff Bezos and the Age of Amazon
+        </h2>
+        <p class="book-author">Stone, Brad</p>
+        <p class="book-isbn">9780316219280</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51EoJO-3VhL._SL160_.jpg"
+          alt="Let My People Go Surfing: The Education of a Reluctant Businessman--Including 10 More Years of Business Unusual"
+        />
+        <h2 class="book-title">
+          Let My People Go Surfing: The Education of a Reluctant
+          Businessman--Including 10 More Years of Business Unusual
+        </h2>
+        <p class="book-author">Chouinard, Yvon</p>
+        <p class="book-isbn">9780143109679</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51YGXTMCQqL._SL160_.jpg"
+          alt="Becoming Steve Jobs: The Evolution of a Reckless Upstart into a Visionary Leader"
+        />
+        <h2 class="book-title">
+          Becoming Steve Jobs: The Evolution of a Reckless Upstart into a
+          Visionary Leader
+        </h2>
+        <p class="book-author">Authors: Schlender, Brent - Tetzeli, Rick</p>
+        <p class="book-isbn">9780385347426</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51b0nG0SSxL._SL160_.jpg"
+          alt="Summary, Analysis, and Review of Danny Meyer's Setting the Table: The Transforming Power of Hospitality in Business"
+        />
+        <h2 class="book-title">
+          Summary, Analysis, and Review of Danny Meyer's Setting the Table: The
+          Transforming Power of Hospitality in Business
+        </h2>
+        <p class="book-author">Start Publishing Notes</p>
+        <p class="book-isbn">9781635966497</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/518WlL4gqHL._SL160_.jpg"
+          alt="Masters of Doom: How Two Guys Created an Empire and Transformed Pop Culture"
+        />
+        <h2 class="book-title">
+          Masters of Doom: How Two Guys Created an Empire and Transformed Pop
+          Culture
+        </h2>
+        <p class="book-author">Kushner, David</p>
+        <p class="book-isbn">9780812972153</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51ObGBRLb4L._SL160_.jpg"
+          alt="How to Turn Down a Billion Dollars: The Snapchat Story"
+        />
+        <h2 class="book-title">
+          How to Turn Down a Billion Dollars: The Snapchat Story
+        </h2>
+        <p class="book-author">Gallagher, Billy</p>
+        <p class="book-isbn">9781250108616</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/318nTPr+4nL._SL160_.jpg"
+          alt="The New New Thing: A Silicon Valley Story"
+        />
+        <h2 class="book-title">The New New Thing: A Silicon Valley Story</h2>
+        <p class="book-author">Lewis, Michael</p>
+        <p class="book-isbn">9780393347814</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41+ZDjisLyL._SL160_.jpg"
+          alt="No Better Time: The Brief, Remarkable Life of Danny Lewin, the Genius Who Transformed the Internet"
+        />
+        <h2 class="book-title">
+          No Better Time: The Brief, Remarkable Life of Danny Lewin, the Genius
+          Who Transformed the Internet
+        </h2>
+        <p class="book-author">Raskin, Molly Knight</p>
+        <p class="book-isbn">9780306821660</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51usR3nfqyL._SL160_.jpg"
+          alt="Against the Odds: An Autobiography"
+        />
+        <h2 class="book-title">Against the Odds: An Autobiography</h2>
+        <p class="book-author">Dyson, James</p>
+        <p class="book-isbn">9781587990144</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41IoTkXfQtL._SL160_.jpg"
+          alt="My Life and Work: Autobiography of Henry Ford (Illustrated)"
+        />
+        <h2 class="book-title">
+          My Life and Work: Autobiography of Henry Ford (Illustrated)
+        </h2>
+        <p class="book-author">Ford, Henry</p>
+        <p class="book-isbn">9798685603098</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51DKkVdUFiL._SL160_.jpg"
+          alt="A Truck Full of Money"
+        />
+        <h2 class="book-title">A Truck Full of Money</h2>
+        <p class="book-author">Kidder, Tracy</p>
+        <p class="book-isbn">9780812985351</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/5117GbqBijL._SL160_.jpg"
+          alt="The Wright Brothers"
+        />
+        <h2 class="book-title">The Wright Brothers</h2>
+        <p class="book-author">McCullough, David</p>
+        <p class="book-isbn">9781476728759</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41NKpukFh-L._SL160_.jpg"
+          alt="The HP Way: How Bill Hewlett and I Built Our Company (Collins Business Essentials)"
+        />
+        <h2 class="book-title">
+          The HP Way: How Bill Hewlett and I Built Our Company (Collins Business
+          Essentials)
+        </h2>
+        <p class="book-author">Packard, David</p>
+        <p class="book-isbn">9780060845797</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41GIQ4K-V1L._SL160_.jpg"
+          alt="Alibaba: The House That Jack Ma Built"
+        />
+        <h2 class="book-title">Alibaba: The House That Jack Ma Built</h2>
+        <p class="book-author">Clark, Duncan</p>
+        <p class="book-isbn">9780062413413</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://pictures.abebooks.com/isbn/9781625342294-us.jpg"
+          alt="Levi Strauss: The Man Who Gave Blue Jeans to the World"
+        />
+        <h2 class="book-title">
+          Levi Strauss: The Man Who Gave Blue Jeans to the World
+        </h2>
+        <p class="book-author">Authors: Downey - Lynn</p>
+        <p class="book-isbn">9781625342294</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51YK5arFGzL._SL160_.jpg"
+          alt="Summary, Analysis, and Review of Ed Catmull's Creativity, Inc.: Overcoming the Unseen Forces that Stand in the Way of True Inspiration"
+        />
+        <h2 class="book-title">
+          Summary, Analysis, and Review of Ed Catmull's Creativity, Inc.:
+          Overcoming the Unseen Forces that Stand in the Way of True Inspiration
+        </h2>
+        <p class="book-author">Start Publishing Notes</p>
+        <p class="book-isbn">9781635967265</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41aWKCU75DL._SL160_.jpg"
+          alt="George Lucas"
+        />
+        <h2 class="book-title">George Lucas</h2>
+        <p class="book-author">Jones, Brian Jay</p>
+        <p class="book-isbn">9780316257428</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41-WVWKw6OL._SL160_.jpg"
+          alt="Finding the Next Steve Jobs: How to Find, Keep, and Nurture Talent"
+        />
+        <h2 class="book-title">
+          Finding the Next Steve Jobs: How to Find, Keep, and Nurture Talent
+        </h2>
+        <p class="book-author">Bushnell, Nolan</p>
+        <p class="book-isbn">9781476759821</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41U2Fw9P80L._SL160_.jpg"
+          alt="The Fish That Ate the Whale: The Life and Times of America's Banana King"
+        />
+        <h2 class="book-title">
+          The Fish That Ate the Whale: The Life and Times of America's Banana
+          King
+        </h2>
+        <p class="book-author">Cohen, Rich</p>
+        <p class="book-isbn">9781250033314</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/413sPlkxelL._SL160_.jpg"
+          alt="The Space Barons: Elon Musk, Jeff Bezos, and the Quest to Colonize the Cosmos"
+        />
+        <h2 class="book-title">
+          The Space Barons: Elon Musk, Jeff Bezos, and the Quest to Colonize the
+          Cosmos
+        </h2>
+        <p class="book-author">Davenport, Christian</p>
+        <p class="book-isbn">9781541774162</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41ZxophIeoL._SL160_.jpg"
+          alt="Walt Disney: An American Original: Commemorative Edition (Disney Editions Deluxe)"
+        />
+        <h2 class="book-title">
+          Walt Disney: An American Original: Commemorative Edition (Disney
+          Editions Deluxe)
+        </h2>
+        <p class="book-author">Thomas, Bob</p>
+        <p class="book-isbn">9781368083966</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://pictures.abebooks.com/isbn/9780738200095-us.jpg"
+          alt="Insisting on the Impossible: The Life of Edwin Land Inventor of Instant Photography"
+        />
+        <h2 class="book-title">
+          Insisting on the Impossible: The Life of Edwin Land Inventor of
+          Instant Photography
+        </h2>
+        <p class="book-author">Authors: McElheny - Victor K.</p>
+        <p class="book-isbn">9780738200095</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51NCFyHpkxL._SL160_.jpg"
+          alt="The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers"
+        />
+        <h2 class="book-title">
+          The Hard Thing About Hard Things: Building a Business When There Are
+          No Easy Answers
+        </h2>
+        <p class="book-author">Horowitz, Ben</p>
+        <p class="book-isbn">9780062273208</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51wL-Hc+m2L._SL160_.jpg"
+          alt="One from Many: VISA and the Rise of Chaordic Organization"
+        />
+        <h2 class="book-title">
+          One from Many: VISA and the Rise of Chaordic Organization
+        </h2>
+        <p class="book-author">Hock, Dee</p>
+        <p class="book-isbn">9781576753323</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41UITAtXKjL._SL160_.jpg"
+          alt="Principles: Life and Work"
+        />
+        <h2 class="book-title">Principles: Life and Work</h2>
+        <p class="book-author">Dalio, Ray</p>
+        <p class="book-isbn">9781501124020</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://pictures.abebooks.com/isbn/9781591843825-us.jpg"
+          alt="Idea Man: A Memoir by the Cofounder of Microsoft"
+        />
+        <h2 class="book-title">
+          Idea Man: A Memoir by the Cofounder of Microsoft
+        </h2>
+        <p class="book-author">Authors: Allen - Paul</p>
+        <p class="book-isbn">9781591843825</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51ZoQHKySIL._SL160_.jpg"
+          alt="Built from Scratch: How a Couple of Regular Guys Grew The Home Depot from Nothing to $30 Billion"
+        />
+        <h2 class="book-title">
+          Built from Scratch: How a Couple of Regular Guys Grew The Home Depot
+          from Nothing to $30 Billion
+        </h2>
+        <p class="book-author">
+          Authors: Marcus, Bernie - Blank, Arthur - Andelman, Bob
+        </p>
+        <p class="book-isbn">9780812933789</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41i4aytYT7L._SL160_.jpg"
+          alt="I Love Capitalism!: An American Story"
+        />
+        <h2 class="book-title">I Love Capitalism!: An American Story</h2>
+        <p class="book-author">Langone, Ken</p>
+        <p class="book-isbn">9780735216242</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51efEpr6uzL._SL160_.jpg"
+          alt="Losing My Virginity: How I Survived, Had Fun, and Made a Fortune Doing Business My Way"
+        />
+        <h2 class="book-title">
+          Losing My Virginity: How I Survived, Had Fun, and Made a Fortune Doing
+          Business My Way
+        </h2>
+        <p class="book-author">Branson, Richard</p>
+        <p class="book-isbn">9780307720740</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41lHhTgCHDL._SL160_.jpg"
+          alt="Finding My Virginity: The New Autobiography"
+        />
+        <h2 class="book-title">Finding My Virginity: The New Autobiography</h2>
+        <p class="book-author">Branson, Richard</p>
+        <p class="book-isbn">9780735219601</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51AK0AQLYyL._SL160_.jpg"
+          alt="Screw It, Let's Do It: Lessons in Life"
+        />
+        <h2 class="book-title">Screw It, Let's Do It: Lessons in Life</h2>
+        <p class="book-author">Branson, Richard</p>
+        <p class="book-isbn">9780753510995</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51ExDKRplgL._SL160_.jpg"
+          alt="Wild Company: The Untold Story of Banana Republic"
+        />
+        <h2 class="book-title">
+          Wild Company: The Untold Story of Banana Republic
+        </h2>
+        <p class="book-author">Authors: Ziegler, Mel - Ziegler, Patricia</p>
+        <p class="book-isbn">9781451683486</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/416D9N0hIkL._SL160_.jpg"
+          alt="The Republic of Tea: The Story of the Creation of a Business, as Told Through the Personal Letters of Its Founders"
+        />
+        <h2 class="book-title">
+          The Republic of Tea: The Story of the Creation of a Business, as Told
+          Through the Personal Letters of Its Founders
+        </h2>
+        <p class="book-author">
+          Authors: Mel Ziegler - Patricia Ziegler - Bill Rosenzweig
+        </p>
+        <p class="book-isbn">9780385420570</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41UlB55oBwL._SL160_.jpg"
+          alt="Who Is Michael Ovitz?"
+        />
+        <h2 class="book-title">Who Is Michael Ovitz?</h2>
+        <p class="book-author">Ovitz, Michael</p>
+        <p class="book-isbn">9780753553381</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51xRk-GfJZL._SL160_.jpg"
+          alt="The First Tycoon: The Epic Life of Cornelius Vanderbilt"
+        />
+        <h2 class="book-title">
+          The First Tycoon: The Epic Life of Cornelius Vanderbilt
+        </h2>
+        <p class="book-author">Stiles, T.J.</p>
+        <p class="book-isbn">9781400031740</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51Xv1Bj3MgL._SL160_.jpg"
+          alt="Tycoon's War: How Cornelius Vanderbilt Invaded a Country to Overthrow America's Most Famous Military Adventurer"
+        />
+        <h2 class="book-title">
+          Tycoon's War: How Cornelius Vanderbilt Invaded a Country to Overthrow
+          America's Most Famous Military Adventurer
+        </h2>
+        <p class="book-author">Dando-Collins, Stephen</p>
+        <p class="book-isbn">9780306818561</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51SVZMNoeAL._SL160_.jpg"
+          alt="Nuts!: Southwest Airlines' Crazy Recipe for Business and Personal Success"
+        />
+        <h2 class="book-title">
+          Nuts!: Southwest Airlines' Crazy Recipe for Business and Personal
+          Success
+        </h2>
+        <p class="book-author">Authors: Freiberg, Kevin - Freiberg, Jackie</p>
+        <p class="book-isbn">9780767901840</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41OqvrmBhzL._SL160_.jpg"
+          alt="Stay the Course: The Story of Vanguard and the Index Revolution"
+        />
+        <h2 class="book-title">
+          Stay the Course: The Story of Vanguard and the Index Revolution
+        </h2>
+        <p class="book-author">Bogle, John C.</p>
+        <p class="book-isbn">9781119404309</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41+ZjTbLStL._SL160_.jpg"
+          alt="Enough: True Measures of Money, Business, and Life"
+        />
+        <h2 class="book-title">
+          Enough: True Measures of Money, Business, and Life
+        </h2>
+        <p class="book-author">Bogle, John C.</p>
+        <p class="book-isbn">9780470524237</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://pictures.abebooks.com/isbn/9781893224643-us.jpg"
+          alt="Hughes: The Private Diaries, Memos and Letters : The Definitive Biography of the First American Billionaire"
+        />
+        <h2 class="book-title">
+          Hughes: The Private Diaries, Memos and Letters : The Definitive
+          Biography of the First American Billionaire
+        </h2>
+        <p class="book-author">Authors: Hack - Richard</p>
+        <p class="book-isbn">9781893224643</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/416PgEKiTRL._SL160_.jpg"
+          alt="The Responsible Company: What We've Learned From Patagonia's First 40 Years"
+        />
+        <h2 class="book-title">
+          The Responsible Company: What We've Learned From Patagonia's First 40
+          Years
+        </h2>
+        <p class="book-author">Authors: Chouinard, Yvon - Stanley, Vincent</p>
+        <p class="book-isbn">9780980122787</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51las+OTDlL._SL160_.jpg"
+          alt="The Box: How the Shipping Container Made the World Smaller and the World Economy Bigger - Second Edition with a new chapter by the author"
+        />
+        <h2 class="book-title">
+          The Box: How the Shipping Container Made the World Smaller and the
+          World Economy Bigger - Second Edition with a new chapter by the author
+        </h2>
+        <p class="book-author">Levinson, Marc</p>
+        <p class="book-isbn">9780691170817</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/418SqIv3TUS._SL160_.jpg"
+          alt="The Autobiography of Benjamin Franklin"
+        />
+        <h2 class="book-title">The Autobiography of Benjamin Franklin</h2>
+        <p class="book-author">Franklin, Benjamin</p>
+        <p class="book-isbn">9781508475095</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/514V+7rFPiL._SL160_.jpg"
+          alt="The King of Oil: The Secret Lives of Marc Rich"
+        />
+        <h2 class="book-title">
+          The King of Oil: The Secret Lives of Marc Rich
+        </h2>
+        <p class="book-author">Ammann, Daniel</p>
+        <p class="book-isbn">9780312650681</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51co6dE7oHL._SL160_.jpg"
+          alt="Sleeping with the Enemy: Coco Chanel's Secret War"
+        />
+        <h2 class="book-title">
+          Sleeping with the Enemy: Coco Chanel's Secret War
+        </h2>
+        <p class="book-author">Vaughan, Hal</p>
+        <p class="book-isbn">9780307475916</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/514PpcHfwPL._SL160_.jpg"
+          alt="The Gambler: How Penniless Dropout Kirk Kerkorian Became the Greatest Deal Maker in Capitalist History"
+        />
+        <h2 class="book-title">
+          The Gambler: How Penniless Dropout Kirk Kerkorian Became the Greatest
+          Deal Maker in Capitalist History
+        </h2>
+        <p class="book-author">Rempel, William C.</p>
+        <p class="book-isbn">9780062456786</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41u1M6o3yQL._SL160_.jpg"
+          alt="Henry J. Kaiser: Builder in the Modern American West (American Studies Series)"
+        />
+        <h2 class="book-title">
+          Henry J. Kaiser: Builder in the Modern American West (American Studies
+          Series)
+        </h2>
+        <p class="book-author">Foster, Mark S.</p>
+        <p class="book-isbn">9780292742260</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41K4M9Yh+RL._SL160_.jpg"
+          alt="The Hiltons the True Story of an American Dynasty (Chinese Edition)"
+        />
+        <h2 class="book-title">
+          The Hiltons the True Story of an American Dynasty (Chinese Edition)
+        </h2>
+        <p class="book-author">J. Randy Taraborrelli</p>
+        <p class="book-isbn">9787300220307</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51FKY2TE4EL._SL160_.jpg"
+          alt="The Goodyear Story: An Inventor's Obsession and the Struggle for a Rubber Monopoly"
+        />
+        <h2 class="book-title">
+          The Goodyear Story: An Inventor's Obsession and the Struggle for a
+          Rubber Monopoly
+        </h2>
+        <p class="book-author">Korman, Richard</p>
+        <p class="book-isbn">9781893554825</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51WmxNIQG3L._SL160_.jpg"
+          alt="The Dao of Capital: Austrian Investing in a Distorted World"
+        />
+        <h2 class="book-title">
+          The Dao of Capital: Austrian Investing in a Distorted World
+        </h2>
+        <p class="book-author">Spitznagel, Mark</p>
+        <p class="book-isbn">9781118347034</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41XdXNOruEL._SL160_.jpg"
+          alt="The Bezos Letters: 14 Principles to Grow Your Business Like Amazon"
+        />
+        <h2 class="book-title">
+          The Bezos Letters: 14 Principles to Grow Your Business Like Amazon
+        </h2>
+        <p class="book-author">Authors: Anderson, Steve - Anderson, Karen</p>
+        <p class="book-isbn">9781642793321</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51Vzg9eUBiL._SL160_.jpg"
+          alt="Excelsior!: The Amazing Life of Stan Lee"
+        />
+        <h2 class="book-title">Excelsior!: The Amazing Life of Stan Lee</h2>
+        <p class="book-author">Authors: Lee, Stan - Mair, George</p>
+        <p class="book-isbn">9780684873053</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51zc4LP2SyL._SL160_.jpg"
+          alt="Meet You in Hell: Andrew Carnegie, Henry Clay Frick, and the Bitter Partnership That Changed America"
+        />
+        <h2 class="book-title">
+          Meet You in Hell: Andrew Carnegie, Henry Clay Frick, and the Bitter
+          Partnership That Changed America
+        </h2>
+        <p class="book-author">Standiford, Les</p>
+        <p class="book-isbn">9781400047680</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51+fi1R1jdL._SL160_.jpg"
+          alt="The Autobiography of Andrew Carnegie and the Gospel of Wealth (Signet Classics)"
+        />
+        <h2 class="book-title">
+          The Autobiography of Andrew Carnegie and the Gospel of Wealth (Signet
+          Classics)
+        </h2>
+        <p class="book-author">Carnegie, Andrew</p>
+        <p class="book-isbn">9780451530387</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/514Mho-YYVL._SL160_.jpg"
+          alt="Henry Clay Frick: The Life of the Perfect Capitalist"
+        />
+        <h2 class="book-title">
+          Henry Clay Frick: The Life of the Perfect Capitalist
+        </h2>
+        <p class="book-author">Skrabec Jr., Quentin R.</p>
+        <p class="book-isbn">9780786443833</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/511p4H-JZOL._SL160_.jpg"
+          alt="Return to the Little Kingdom: Steve Jobs and the Creation of Apple"
+        />
+        <h2 class="book-title">
+          Return to the Little Kingdom: Steve Jobs and the Creation of Apple
+        </h2>
+        <p class="book-author">Moritz, Michael</p>
+        <p class="book-isbn">9781590202814</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51nD0W0k+eL._SL160_.jpg"
+          alt="The Launch Pad"
+        />
+        <h2 class="book-title">The Launch Pad</h2>
+        <p class="book-author">Stross; Randall</p>
+        <p class="book-isbn">9780670923496</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/416YRkOeatL._SL160_.jpg"
+          alt="Tao of Charlie Munger: A Compilation of Quotes from Berkshire Hathaway's Vice Chairman on Life, Business, and the Pursuit of Wealth With Commentary by David Clark"
+        />
+        <h2 class="book-title">
+          Tao of Charlie Munger: A Compilation of Quotes from Berkshire
+          Hathaway's Vice Chairman on Life, Business, and the Pursuit of Wealth
+          With Commentary by David Clark
+        </h2>
+        <p class="book-author">Clark, David</p>
+        <p class="book-isbn">9781501153341</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41cm7JoBbDL._SL160_.jpg"
+          alt="Charlie Munger: The Complete Investor (Columbia Business School Publishing)"
+        />
+        <h2 class="book-title">
+          Charlie Munger: The Complete Investor (Columbia Business School
+          Publishing)
+        </h2>
+        <p class="book-author">Griffin, Tren</p>
+        <p class="book-isbn">9780231170994</p>
+      </div>
+
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/415HftG-tJL._SL160_.jpg"
+        alt="Today and Tomorrow: A Continuation of "My Life and Work"">
+        <h2 class="book-title">
+          Today and Tomorrow: A Continuation of "My Life and Work"
+        </h2>
+        <p class="book-author">Authors: Ford, Henry - Crowther, Samuel</p>
+        <p class="book-isbn">9798356256370</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51e1cICvWxL._SL160_.jpg"
+          alt="Rolls-Royce: The Magic of a Name: The First Forty Years of Britains Most Prestigious Company"
+        />
+        <h2 class="book-title">
+          Rolls-Royce: The Magic of a Name: The First Forty Years of Britains
+          Most Prestigious Company
+        </h2>
+        <p class="book-author">Pugh, Peter</p>
+        <p class="book-isbn">9781848319240</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51L6gps0IfL._SL160_.jpg"
+          alt="Ogilvy on Advertising"
+        />
+        <h2 class="book-title">Ogilvy on Advertising</h2>
+        <p class="book-author">Ogilvy, David</p>
+        <p class="book-isbn">9780394729039</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51G4hrKTHAL._SL160_.jpg"
+          alt="Empires of Light: Edison, Tesla, Westinghouse, and the Race to Electrify the World"
+        />
+        <h2 class="book-title">
+          Empires of Light: Edison, Tesla, Westinghouse, and the Race to
+          Electrify the World
+        </h2>
+        <p class="book-author">Jonnes, Jill</p>
+        <p class="book-isbn">9780375758843</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51wzCPhGNsL._SL160_.jpg"
+          alt="The Barnstormer and the Lady: Aviation Legends Walter and Olive Ann Beech"
+        />
+        <h2 class="book-title">
+          The Barnstormer and the Lady: Aviation Legends Walter and Olive Ann
+          Beech
+        </h2>
+        <p class="book-author">Dennis Farney</p>
+        <p class="book-isbn">9781935362692</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51iDmPavMhL._SL160_.jpg"
+          alt="The Alchemy of Air: A Jewish Genius, a Doomed Tycoon, and the Scientific Discovery That Fed the World but Fueled the Rise of Hitler"
+        />
+        <h2 class="book-title">
+          The Alchemy of Air: A Jewish Genius, a Doomed Tycoon, and the
+          Scientific Discovery That Fed the World but Fueled the Rise of Hitler
+        </h2>
+        <p class="book-author">Hager, Thomas</p>
+        <p class="book-isbn">9780307351791</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41AAyy6J0jL._SL160_.jpg"
+          alt="The Maverick and His Machine: Thomas Watson, Sr. and the Making of IBM"
+        />
+        <h2 class="book-title">
+          The Maverick and His Machine: Thomas Watson, Sr. and the Making of IBM
+        </h2>
+        <p class="book-author">Maney, Kevin</p>
+        <p class="book-isbn">9780471679257</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51duPVN7EnL._SL160_.jpg"
+          alt="Berkshire Hathaway Letters to Shareholders"
+        />
+        <h2 class="book-title">Berkshire Hathaway Letters to Shareholders</h2>
+        <p class="book-author">Warren Buffett</p>
+        <p class="book-isbn">9780615975078</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41rgYfvXluL._SL160_.jpg"
+          alt="Confessions of an Advertising Man"
+        />
+        <h2 class="book-title">Confessions of an Advertising Man</h2>
+        <p class="book-author">Ogilvy, David</p>
+        <p class="book-isbn">9781904915379</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/31GFOkAZJ-L._SL160_.jpg"
+          alt="Poor Charlie’s Almanack: The Essential Wit and Wisdom of Charles T. Munger"
+        />
+        <h2 class="book-title">
+          Poor Charlie’s Almanack: The Essential Wit and Wisdom of Charles T.
+          Munger
+        </h2>
+        <p class="book-author">Munger, Charles T.</p>
+        <p class="book-isbn">9781953953230</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/411PAB93QEL._SL160_.jpg"
+          alt="First A Dream"
+        />
+        <h2 class="book-title">First A Dream</h2>
+        <p class="book-author">Authors: Clayton, Jim - Retherford, Bill</p>
+        <p class="book-isbn">9780972638906</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51c7GOTfgkL._SL160_.jpg"
+          alt="Fortune's Formula: The Untold Story of the Scientific Betting System That Beat the Casinos and Wall Street"
+        />
+        <h2 class="book-title">
+          Fortune's Formula: The Untold Story of the Scientific Betting System
+          That Beat the Casinos and Wall Street
+        </h2>
+        <p class="book-author">Poundstone, William</p>
+        <p class="book-isbn">9780809045990</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41O2FNKTIBL._SL160_.jpg"
+          alt="A Man for All Markets: From Las Vegas to Wall Street, How I Beat the Dealer and the Market"
+        />
+        <h2 class="book-title">
+          A Man for All Markets: From Las Vegas to Wall Street, How I Beat the
+          Dealer and the Market
+        </h2>
+        <p class="book-author">Thorp, Edward O.</p>
+        <p class="book-isbn">9780812979909</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41NsjoYeEfL._SL160_.jpg"
+          alt="The Outsiders: Eight Unconventional CEOs and Their Radically Rational Blueprint for Success"
+        />
+        <h2 class="book-title">
+          The Outsiders: Eight Unconventional CEOs and Their Radically Rational
+          Blueprint for Success
+        </h2>
+        <p class="book-author">Thorndike Jr., William N.</p>
+        <p class="book-isbn">9781422162675</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/4114mpv+plL._SL160_.jpg"
+          alt="A Mind at Play: How Claude Shannon Invented the Information Age"
+        />
+        <h2 class="book-title">
+          A Mind at Play: How Claude Shannon Invented the Information Age
+        </h2>
+        <p class="book-author">Soni, Jimmy</p>
+        <p class="book-isbn">9781476766690</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41sOqsOea9L._SL160_.jpg"
+          alt="James J. Hill: Empire Builder of the Northwest (Volume 12) (The Oklahoma Western Biographies)"
+        />
+        <h2 class="book-title">
+          James J. Hill: Empire Builder of the Northwest (Volume 12) (The
+          Oklahoma Western Biographies)
+        </h2>
+        <p class="book-author">Malone, Michael P.</p>
+        <p class="book-isbn">9780806128603</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41CH93cmD2L._SL160_.jpg"
+          alt="Go Like Hell: Ford, Ferrari, and Their Battle for Speed and Glory at Le Mans"
+        />
+        <h2 class="book-title">
+          Go Like Hell: Ford, Ferrari, and Their Battle for Speed and Glory at
+          Le Mans
+        </h2>
+        <p class="book-author">Baime, A. J.</p>
+        <p class="book-isbn">9780547336053</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/61DCqID5r6L._SL160_.jpg"
+          alt="Enzo Ferrari: Power, Politics and the Making of an Automobile Empire"
+        />
+        <h2 class="book-title">
+          Enzo Ferrari: Power, Politics and the Making of an Automobile Empire
+        </h2>
+        <p class="book-author">Luca Dal Monte</p>
+        <p class="book-isbn">9781935007289</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41Ks5kYuooL._SL160_.jpg"
+          alt="Carroll Shelby"
+        />
+        <h2 class="book-title">Carroll Shelby</h2>
+        <p class="book-author">Mills, Rinsey</p>
+        <p class="book-isbn">9780760346464</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51KVWaAP02L._SL160_.jpg"
+          alt="The Snowball: Warren Buffett and the Business of Life"
+        />
+        <h2 class="book-title">
+          The Snowball: Warren Buffett and the Business of Life
+        </h2>
+        <p class="book-author">Schroeder, Alice</p>
+        <p class="book-isbn">9780553384611</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/419Bxr5+81L._SL160_.jpg"
+          alt="The Tao of Warren Buffett: Warren Buffett's Words of Wisdom: Quotations and Interpretations to Help Guide You to Billionaire Wealth and Enlightened Business Management"
+        />
+        <h2 class="book-title">
+          The Tao of Warren Buffett: Warren Buffett's Words of Wisdom:
+          Quotations and Interpretations to Help Guide You to Billionaire Wealth
+          and Enlightened Business Management
+        </h2>
+        <p class="book-author">Authors: Buffett, Mary - Clark, David</p>
+        <p class="book-isbn">9781416541325</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41EBdqJceML._SL160_.jpg"
+          alt="Made in Japan: Akio Morita and Sony"
+        />
+        <h2 class="book-title">Made in Japan: Akio Morita and Sony</h2>
+        <p class="book-author">
+          Authors: Akio Morita - Edwin M. Reingold - Mitsuko Shimomura
+        </p>
+        <p class="book-isbn">9780525244653</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51VtlCl+fuL._SL160_.jpg"
+          alt="The Richest Woman in America: Hetty Green in the Gilded Age"
+        />
+        <h2 class="book-title">
+          The Richest Woman in America: Hetty Green in the Gilded Age
+        </h2>
+        <p class="book-author">Wallach, Janet</p>
+        <p class="book-isbn">9780307474575</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51KKFS2085L._SL160_.jpg"
+          alt="Leading By Design: The Ikea Story"
+        />
+        <h2 class="book-title">Leading By Design: The Ikea Story</h2>
+        <p class="book-author">Authors: Ingvar Kamprad - Bertil Torekull</p>
+        <p class="book-isbn">9780066620381</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51UzCLuF58S._SL160_.jpg"
+          alt="Les Schwab Pride in Performance: Keep It Going"
+        />
+        <h2 class="book-title">
+          Les Schwab Pride in Performance: Keep It Going
+        </h2>
+        <p class="book-author">Schwab, Les</p>
+        <p class="book-isbn">9780892881512</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://pictures.abebooks.com/isbn/9781591843474-us.jpg"
+          alt="The Score Takes Care of Itself: My Philosophy of Leadership"
+        />
+        <h2 class="book-title">
+          The Score Takes Care of Itself: My Philosophy of Leadership
+        </h2>
+        <p class="book-author">
+          Authors: Walsh - Bill; Jamison - Steve; Walsh - Craig
+        </p>
+        <p class="book-isbn">9781591843474</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51zjW+p8qzL._SL160_.jpg"
+          alt="Sol Price Retail Revolutionary & Social Innovator"
+        />
+        <h2 class="book-title">
+          Sol Price Retail Revolutionary & Social Innovator
+        </h2>
+        <p class="book-author">Robert E. Price</p>
+        <p class="book-isbn">9780988680609</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51LRsunqsIL._SL160_.jpg"
+          alt="The Man Who Solved the Market: How Jim Simons Launched the Quant Revolution"
+        />
+        <h2 class="book-title">
+          The Man Who Solved the Market: How Jim Simons Launched the Quant
+          Revolution
+        </h2>
+        <p class="book-author">Zuckerman, Gregory</p>
+        <p class="book-isbn">9780735217980</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/413U-QExZbL._SL160_.jpg"
+          alt="Sneaker Wars: The Enemy Brothers Who Founded Adidas and Puma and the Family Feud That Forever Changed the Business of Sports"
+        />
+        <h2 class="book-title">
+          Sneaker Wars: The Enemy Brothers Who Founded Adidas and Puma and the
+          Family Feud That Forever Changed the Business of Sports
+        </h2>
+        <p class="book-author">Smit, Barbara</p>
+        <p class="book-isbn">9780061246586</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41VNCKH485L._SL160_.jpg"
+          alt="The Operator: David Geffen Builds, Buys, and Sells the New Hollywood"
+        />
+        <h2 class="book-title">
+          The Operator: David Geffen Builds, Buys, and Sells the New Hollywood
+        </h2>
+        <p class="book-author">King, Tom</p>
+        <p class="book-isbn">9780679457541</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41bomfNOhDL._SL160_.jpg"
+          alt="Plagued by Fire: The Dreams and Furies of Frank Lloyd Wright"
+        />
+        <h2 class="book-title">
+          Plagued by Fire: The Dreams and Furies of Frank Lloyd Wright
+        </h2>
+        <p class="book-author">Hendrickson, Paul</p>
+        <p class="book-isbn">9780385353656</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51equFM5eHL._SL160_.jpg"
+          alt="Black Titan: A.G. Gaston and the Making of a Black American Millionaire"
+        />
+        <h2 class="book-title">
+          Black Titan: A.G. Gaston and the Making of a Black American
+          Millionaire
+        </h2>
+        <p class="book-author">
+          Authors: Jenkins, Carol - Hines, Elizabeth Gardner
+        </p>
+        <p class="book-isbn">9780345453488</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://pictures.abebooks.com/isbn/9780446577694-us.jpg"
+          alt="The Professor, the Banker, and the Suicide King: Inside the Richest Poker Game of All Time"
+        />
+        <h2 class="book-title">
+          The Professor, the Banker, and the Suicide King: Inside the Richest
+          Poker Game of All Time
+        </h2>
+        <p class="book-author">Authors: Craig - Michael</p>
+        <p class="book-isbn">9780446577694</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51M8bk2dL4L._SL160_.jpg"
+          alt="Benjamin Franklin: An American Life"
+        />
+        <h2 class="book-title">Benjamin Franklin: An American Life</h2>
+        <p class="book-author">Isaacson, Walter</p>
+        <p class="book-isbn">9780684807614</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51TiUdFnzOL._SL160_.jpg"
+          alt="Samuel Bronfman: The Life and Times of Seagram’s Mr. Sam"
+        />
+        <h2 class="book-title">
+          Samuel Bronfman: The Life and Times of Seagram’s Mr. Sam
+        </h2>
+        <p class="book-author">Marrus, Michael R.</p>
+        <p class="book-isbn">9780874515718</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51M8RAoccGL._SL160_.jpg"
+          alt="Born of this land : my life story"
+        />
+        <h2 class="book-title">Born of this land : my life story</h2>
+        <p class="book-author">ISBN-13: 9791196193447</p>
+        <p class="book-isbn">9791196193447</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51XQagSVNhL._SL160_.jpg"
+          alt="My Forty Years with Ford (Great Lakes Books Series)"
+        />
+        <h2 class="book-title">
+          My Forty Years with Ford (Great Lakes Books Series)
+        </h2>
+        <p class="book-author">
+          Authors: Sorensen, Charles E - Williamson, Samuel T
+        </p>
+        <p class="book-isbn">9780814332795</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41ocrnEeM-L._SL160_.jpg"
+          alt="The Dodge Brothers: The Men, the Motor Cars, and the Legacy (Great Lakes Books Series)"
+        />
+        <h2 class="book-title">
+          The Dodge Brothers: The Men, the Motor Cars, and the Legacy (Great
+          Lakes Books Series)
+        </h2>
+        <p class="book-author">Hyde, Dr. Charles K.</p>
+        <p class="book-isbn">9780814332474</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51+-sb+RRyL._SL160_.jpg"
+          alt="Billy, Alfred, and General Motors: The Story of Two Unique Men, a Legendary Company, and a Remarkable Time in American History"
+        />
+        <h2 class="book-title">
+          Billy, Alfred, and General Motors: The Story of Two Unique Men, a
+          Legendary Company, and a Remarkable Time in American History
+        </h2>
+        <p class="book-author">PELFREY, William</p>
+        <p class="book-isbn">9780814433874</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51Y+JjBkvUL._SL160_.jpg"
+          alt="My Years with General Motors"
+        />
+        <h2 class="book-title">My Years with General Motors</h2>
+        <p class="book-author">Sloan, Alfred</p>
+        <p class="book-isbn">9780385042352</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51TGZ9FRS2L._SL160_.jpg"
+          alt="The Fast Times of Albert Champion: From Record-Setting Racer to Dashing Tycoon, An Untold Story of Speed, Success, and Betrayal"
+        />
+        <h2 class="book-title">
+          The Fast Times of Albert Champion: From Record-Setting Racer to
+          Dashing Tycoon, An Untold Story of Speed, Success, and Betrayal
+        </h2>
+        <p class="book-author">Nye, Peter Joffre</p>
+        <p class="book-isbn">9781616149642</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51v7ChWJZzS._SL160_.jpg"
+          alt="Softwar: An Intimate Portrait of Larry Ellison and Oracle"
+        />
+        <h2 class="book-title">
+          Softwar: An Intimate Portrait of Larry Ellison and Oracle
+        </h2>
+        <p class="book-author">Symonds, Matthew</p>
+        <p class="book-isbn">9780743225052</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41sl1CUmwSL._SL160_.jpg"
+          alt="Charles F. Kettering: A Biography"
+        />
+        <h2 class="book-title">Charles F. Kettering: A Biography</h2>
+        <p class="book-author">Boyd, Thomas Alvin</p>
+        <p class="book-isbn">9781587981333</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51C2HZywJdL._SL160_.jpg"
+          alt="The Billionaire and the Mechanic: How Larry Ellison and a Car Mechanic Teamed up to Win Sailings Greatest Race, the Americas Cup, Twice"
+        />
+        <h2 class="book-title">
+          The Billionaire and the Mechanic: How Larry Ellison and a Car Mechanic
+          Teamed up to Win Sailings Greatest Race, the Americas Cup, Twice
+        </h2>
+        <p class="book-author">Guthrie, Julian</p>
+        <p class="book-isbn">9780802121356</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51Ii9OlFCdL._SL160_.jpg"
+          alt="The Difference Between God and Larry Ellison: *God Doesn't Think He's Larry Ellison"
+        />
+        <h2 class="book-title">
+          The Difference Between God and Larry Ellison: *God Doesn't Think He's
+          Larry Ellison
+        </h2>
+        <p class="book-author">Wilson, Mike</p>
+        <p class="book-isbn">9780060008765</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51BOUjdkSfL._SL160_.jpg"
+          alt="Master of Precision: Henry M. Leland (Great Lakes Books Series)"
+        />
+        <h2 class="book-title">
+          Master of Precision: Henry M. Leland (Great Lakes Books Series)
+        </h2>
+        <p class="book-author">
+          Authors: Henry M. Leland - Ottilie M. Leland - Minnie Dubbs Millbrook
+        </p>
+        <p class="book-isbn">9780814326657</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51sZ6oa9-KL._SL160_.jpg"
+          alt="How to Get Rich: One of the World's Greatest Entrepreneurs Shares His Secrets"
+        />
+        <h2 class="book-title">
+          How to Get Rich: One of the World's Greatest Entrepreneurs Shares His
+          Secrets
+        </h2>
+        <p class="book-author">Dennis, Felix</p>
+        <p class="book-isbn">9781591842712</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/412v0jOsrgL._SL160_.jpg"
+          alt="Life of an American Workman"
+        />
+        <h2 class="book-title">Life of an American Workman</h2>
+        <p class="book-author">
+          Authors: Chrysler, Walter P. - Sparkes, Boyden
+        </p>
+        <p class="book-isbn">9781849023276</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51NHvd1EpuL._SL160_.jpg"
+          alt="The Big Score: Robert Friedland, INCO, And The Voisey's Bay Hustle"
+        />
+        <h2 class="book-title">
+          The Big Score: Robert Friedland, INCO, And The Voisey's Bay Hustle
+        </h2>
+        <p class="book-author">McNish, Jacquie</p>
+        <p class="book-isbn">9780385259064</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51wvvYED6oL._SL160_.jpg"
+          alt="The Instant Image: Edwin Land and the Polaroid experience"
+        />
+        <h2 class="book-title">
+          The Instant Image: Edwin Land and the Polaroid experience
+        </h2>
+        <p class="book-author">Olshaker, Mark</p>
+        <p class="book-isbn">9780812824421</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51p3CDbGpDL._SL160_.jpg"
+          alt="Land's Polaroid: A Company and the Man Who Invented It"
+        />
+        <h2 class="book-title">
+          Land's Polaroid: A Company and the Man Who Invented It
+        </h2>
+        <p class="book-author">Wensberg, Peter C.</p>
+        <p class="book-isbn">9780395421147</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41Ta7H-qWGL._SL160_.jpg"
+          alt="A Triumph of Genius: Edwin Land, Polaroid, and the Kodak Patent War"
+        />
+        <h2 class="book-title">
+          A Triumph of Genius: Edwin Land, Polaroid, and the Kodak Patent War
+        </h2>
+        <p class="book-author">Fierstein, Ronald K.</p>
+        <p class="book-isbn">9781627227698</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41PLgy3WMDL._SL160_.jpg"
+          alt="Pulitzer: A Life in Politics, Print, and Power"
+        />
+        <h2 class="book-title">
+          Pulitzer: A Life in Politics, Print, and Power
+        </h2>
+        <p class="book-author">Morris, James McGrath</p>
+        <p class="book-isbn">9780060798703</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51MINI43rQL._SL160_.jpg"
+          alt="Estee: A Success Story"
+        />
+        <h2 class="book-title">Estee: A Success Story</h2>
+        <p class="book-author">Lauder, Estee</p>
+        <p class="book-isbn">9780394551913</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41OqbVVB+VL._SL160_.jpg"
+          alt="Barnum: An American Life"
+        />
+        <h2 class="book-title">Barnum: An American Life</h2>
+        <p class="book-author">Wilson, Robert</p>
+        <p class="book-isbn">9781501118623</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51A14PNFHDL._SL160_.jpg"
+          alt="Reluctant Genius : The Passionate Life and Inventive Mind of Alexander Graham Bell"
+        />
+        <h2 class="book-title">
+          Reluctant Genius : The Passionate Life and Inventive Mind of Alexander
+          Graham Bell
+        </h2>
+        <p class="book-author">Gray, Charlotte</p>
+        <p class="book-isbn">9780002006767</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://pictures.abebooks.com/isbn/9780671734008-us.jpg"
+          alt="The House of Morgan: An American Banking Dynasty and the Rise of Modern Finance"
+        />
+        <h2 class="book-title">
+          The House of Morgan: An American Banking Dynasty and the Rise of
+          Modern Finance
+        </h2>
+        <p class="book-author">Authors: Chernow - Ron</p>
+        <p class="book-isbn">9780671734008</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51SuKPZZzuL._SL160_.jpg"
+          alt="Hard Drive: Bill Gates and the Making of the Microsoft Empire"
+        />
+        <h2 class="book-title">
+          Hard Drive: Bill Gates and the Making of the Microsoft Empire
+        </h2>
+        <p class="book-author">Authors: James Wallace - Jim Erickson</p>
+        <p class="book-isbn">9780887306297</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://pictures.abebooks.com/isbn/9781451662436-us.jpg"
+          alt="Total Recall: My Unbelievably True Life Story"
+        />
+        <h2 class="book-title">
+          Total Recall: My Unbelievably True Life Story
+        </h2>
+        <p class="book-author">Arnold Schwarzenegger</p>
+        <p class="book-isbn">9781451662436</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41k61g5qknL._SL160_.jpg"
+          alt="The Hour of Fate: Theodore Roosevelt, J.P. Morgan, and the Battle to Transform American Capitalism"
+        />
+        <h2 class="book-title">
+          The Hour of Fate: Theodore Roosevelt, J.P. Morgan, and the Battle to
+          Transform American Capitalism
+        </h2>
+        <p class="book-author">Berfield, Susan</p>
+        <p class="book-isbn">9781635572490</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51toKDXD07L._SL160_.jpg"
+          alt="Man of the Hour: James B. Conant, Warrior Scientist"
+        />
+        <h2 class="book-title">
+          Man of the Hour: James B. Conant, Warrior Scientist
+        </h2>
+        <p class="book-author">Conant, Jennet</p>
+        <p class="book-isbn">9781476730912</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51nbCCBDUEL._SL160_.jpg"
+          alt="Endurance"
+        />
+        <h2 class="book-title">Endurance</h2>
+        <p class="book-author">Alfred Lansing</p>
+        <p class="book-isbn">9780465062881</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41S8-ugIBtL._SL160_.jpg"
+          alt="The Chief: The Life of William Randolph Hearst"
+        />
+        <h2 class="book-title">
+          The Chief: The Life of William Randolph Hearst
+        </h2>
+        <p class="book-author">Nasaw, David</p>
+        <p class="book-isbn">9780618154463</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51la8vhQIPL._SL160_.jpg"
+          alt="Hershey: Milton S. Hershey's Extraordinary Life of Wealth, Empire, and Utopian Dreams"
+        />
+        <h2 class="book-title">
+          Hershey: Milton S. Hershey's Extraordinary Life of Wealth, Empire, and
+          Utopian Dreams
+        </h2>
+        <p class="book-author">D'antonio, Michael</p>
+        <p class="book-isbn">9780739472965</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41u54EqGYML._SL160_.jpg"
+          alt="Revolver: Sam Colt and the Six-Shooter That Changed America"
+        />
+        <h2 class="book-title">
+          Revolver: Sam Colt and the Six-Shooter That Changed America
+        </h2>
+        <p class="book-author">Rasenberger, Jim</p>
+        <p class="book-isbn">9781501166389</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51Ud4KV6gLL._SL160_.jpg"
+          alt="The Classic Autobiography of John D. Rockefeller - Random Reminiscences Of Men And Events"
+        />
+        <h2 class="book-title">
+          The Classic Autobiography of John D. Rockefeller - Random
+          Reminiscences Of Men And Events
+        </h2>
+        <p class="book-author">Rockefeller, John D.</p>
+        <p class="book-isbn">9781790494996</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51JQpO3A0OL._SL160_.jpg"
+          alt="The Big Rich: The Rise and Fall of the Greatest Texas Oil Fortunes"
+        />
+        <h2 class="book-title">
+          The Big Rich: The Rise and Fall of the Greatest Texas Oil Fortunes
+        </h2>
+        <p class="book-author">Burrough, Bryan</p>
+        <p class="book-isbn">9780143116820</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/519+6fVlWhL._SL160_.jpg"
+          alt="Sam Walton: The Inside Story of America's Richest Man"
+        />
+        <h2 class="book-title">
+          Sam Walton: The Inside Story of America's Richest Man
+        </h2>
+        <p class="book-author">Trimble, Vance H.</p>
+        <p class="book-isbn">9780451171610</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/515Y2T4ubeL._SL160_.jpg"
+          alt="Overnight Success: Federal Express And: Frederick Smith, Its Renegade Creator"
+        />
+        <h2 class="book-title">
+          Overnight Success: Federal Express And: Frederick Smith, Its Renegade
+          Creator
+        </h2>
+        <p class="book-author">Trimble, Vance</p>
+        <p class="book-isbn">9780517585108</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41rI403Y0SL._SL160_.jpg"
+          alt="Personal History"
+        />
+        <h2 class="book-title">Personal History</h2>
+        <p class="book-author">Graham, Katharine</p>
+        <p class="book-isbn">9780375701047</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51+IzepIdhL._SL160_.jpg"
+          alt="Bowerman and the Men of Oregon: The Story of Oregon's Legendary Coach and Nike's Cofounder"
+        />
+        <h2 class="book-title">
+          Bowerman and the Men of Oregon: The Story of Oregon's Legendary Coach
+          and Nike's Cofounder
+        </h2>
+        <p class="book-author">Moore, Kenny</p>
+        <p class="book-isbn">9781594867316</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/4189u9k-lrL._SL160_.jpg"
+          alt="My Life with Charlie Brown"
+        />
+        <h2 class="book-title">My Life with Charlie Brown</h2>
+        <p class="book-author">Schulz, Charles M.</p>
+        <p class="book-isbn">9781604734478</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41rkESIvsQL._SL160_.jpg"
+          alt="Invent and Wander: The Collected Writings of Jeff Bezos, With an Introduction by Walter Isaacson"
+        />
+        <h2 class="book-title">
+          Invent and Wander: The Collected Writings of Jeff Bezos, With an
+          Introduction by Walter Isaacson
+        </h2>
+        <p class="book-author">ISBN-13: 9781647820718</p>
+        <p class="book-isbn">9781647820718</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41Sr3tmhhmL._SL160_.jpg"
+          alt="Mornings on Horseback: The Story of an Extraordinary Family, a Vanished Way of Life and the Unique Child Who Became Theodore Roosevelt"
+        />
+        <h2 class="book-title">
+          Mornings on Horseback: The Story of an Extraordinary Family, a
+          Vanished Way of Life and the Unique Child Who Became Theodore
+          Roosevelt
+        </h2>
+        <p class="book-author">McCullough, David</p>
+        <p class="book-isbn">9780671447540</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41uLbeJgpYL._SL160_.jpg"
+          alt="Summary of The Innovators: How a Group of Hackers, Geniuses, and Geeks Created the Digital Revolution by Walter Isaacson"
+        />
+        <h2 class="book-title">
+          Summary of The Innovators: How a Group of Hackers, Geniuses, and Geeks
+          Created the Digital Revolution by Walter Isaacson
+        </h2>
+        <p class="book-author">ISBN-13: 9781646153879</p>
+        <p class="book-isbn">9781646153879</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41-oFgAd4eL._SL160_.jpg"
+          alt="Disney's Land: Walt Disney and the Invention of the Amusement Park That Changed the World"
+        />
+        <h2 class="book-title">
+          Disney's Land: Walt Disney and the Invention of the Amusement Park
+          That Changed the World
+        </h2>
+        <p class="book-author">Snow, Richard</p>
+        <p class="book-isbn">9781501190810</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41-tgdwxCkL._SL160_.jpg"
+          alt="Swimming Across: A Memoir"
+        />
+        <h2 class="book-title">Swimming Across: A Memoir</h2>
+        <p class="book-author">Grove, Andrew S.</p>
+        <p class="book-isbn">9780446528597</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/413Y-gkS0KL._SL160_.jpg"
+          alt="Routines and Orgies: The Life of Peter Cundill, Financial Genius, Philosopher, and Philanthropist"
+        />
+        <h2 class="book-title">
+          Routines and Orgies: The Life of Peter Cundill, Financial Genius,
+          Philosopher, and Philanthropist
+        </h2>
+        <p class="book-author">Risso-Gill, Christopher</p>
+        <p class="book-isbn">9780773544727</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/511YVC9L5bL._SL160_.jpg"
+          alt="Becoming Dr. Seuss: Theodor Geisel and the Making of an American Imagination"
+        />
+        <h2 class="book-title">
+          Becoming Dr. Seuss: Theodor Geisel and the Making of an American
+          Imagination
+        </h2>
+        <p class="book-author">Jones, Brian Jay</p>
+        <p class="book-isbn">9781524742782</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51yf095YpPL._SL160_.jpg"
+          alt="Yeager: An Autobiography"
+        />
+        <h2 class="book-title">Yeager: An Autobiography</h2>
+        <p class="book-author">Chuck Yeager</p>
+        <p class="book-isbn">9780553256741</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51s-Q61F42L._SL160_.jpg"
+          alt="Alfred Nobel: A Biography"
+        />
+        <h2 class="book-title">Alfred Nobel: A Biography</h2>
+        <p class="book-author">Fant, Kenne</p>
+        <p class="book-isbn">9781559702225</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51enUqo5ITL._SL160_.jpg"
+          alt="Rocket Man: Robert H. Goddard and the Birth of the Space Age"
+        />
+        <h2 class="book-title">
+          Rocket Man: Robert H. Goddard and the Birth of the Space Age
+        </h2>
+        <p class="book-author">Clary, David A.</p>
+        <p class="book-isbn">9780786887057</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://pictures.abebooks.com/isbn/9781403988157-us.jpg"
+          alt="BROKEN GENIUS THE RISE AND FALL OF WILLIAM SHOCKLEY, CREATOR OF THE ELECTRONIC AGE"
+        />
+        <h2 class="book-title">
+          BROKEN GENIUS THE RISE AND FALL OF WILLIAM SHOCKLEY, CREATOR OF THE
+          ELECTRONIC AGE
+        </h2>
+        <p class="book-author">Joel N. Shurkin</p>
+        <p class="book-isbn">9781403988157</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41MuiPR0gWL._SL160_.jpg"
+          alt="The Man Behind the Microchip: Robert Noyce and the Invention of Silicon Valley"
+        />
+        <h2 class="book-title">
+          The Man Behind the Microchip: Robert Noyce and the Invention of
+          Silicon Valley
+        </h2>
+        <p class="book-author">Berlin, Leslie</p>
+        <p class="book-isbn">9780195311990</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41CBn8qZErL._SL160_.jpg"
+          alt="Driven: An Autobiography"
+        />
+        <h2 class="book-title">Driven: An Autobiography</h2>
+        <p class="book-author">Authors: Larry H. Miller - Doug Robinson</p>
+        <p class="book-isbn">9781609089160</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51c4GF9bmEL._SL160_.jpg"
+          alt="The King of Madison Avenue: David Ogilvy and the Making of Modern Advertising"
+        />
+        <h2 class="book-title">
+          The King of Madison Avenue: David Ogilvy and the Making of Modern
+          Advertising
+        </h2>
+        <p class="book-author">Roman, Kenneth</p>
+        <p class="book-isbn">9780230100367</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/61lW1P9FufL._SL160_.jpg"
+          alt="My Life in Advertising"
+        />
+        <h2 class="book-title">My Life in Advertising</h2>
+        <p class="book-author">Hopkins, Claude C.</p>
+        <p class="book-isbn">9781503025660</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41x7y0clU4L._SL160_.jpg"
+          alt="The Billionaire Who Wasn't: How Chuck Feeney Secretly Made and Gave Away a Fortune"
+        />
+        <h2 class="book-title">
+          The Billionaire Who Wasn't: How Chuck Feeney Secretly Made and Gave
+          Away a Fortune
+        </h2>
+        <p class="book-author">O'Clery, Conor</p>
+        <p class="book-isbn">9781610393348</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/31j6iG5XEvL._SL160_.jpg"
+          alt="Summary of Liftoff by Eric Berger: Elon Musk and the Desperate Early Days that Launched SpaceX"
+        />
+        <h2 class="book-title">
+          Summary of Liftoff by Eric Berger: Elon Musk and the Desperate Early
+          Days that Launched SpaceX
+        </h2>
+        <p class="book-author">Empress publish</p>
+        <p class="book-isbn">9798446851201</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/31tVxW1b33L._SL160_.jpg"
+          alt="Hollywood Rajah: The Life and Times of Louis B. Mayer"
+        />
+        <h2 class="book-title">
+          Hollywood Rajah: The Life and Times of Louis B. Mayer
+        </h2>
+        <p class="book-author">Authors: Crowther, Bosley - Mayer, Louis B.</p>
+        <p class="book-isbn">9781258006402</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51zifulToIL._SL160_.jpg"
+          alt="Overdrive: Bill Gates and the Race to Control Cyberspace"
+        />
+        <h2 class="book-title">
+          Overdrive: Bill Gates and the Race to Control Cyberspace
+        </h2>
+        <p class="book-author">Wallace, James</p>
+        <p class="book-isbn">9781620458013</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41p8jZ3oI5L._SL160_.jpg"
+          alt="The River of Doubt: Theodore Roosevelt's Darkest Journey"
+        />
+        <h2 class="book-title">
+          The River of Doubt: Theodore Roosevelt's Darkest Journey
+        </h2>
+        <p class="book-author">Millard, Candice</p>
+        <p class="book-isbn">9780767913737</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41xNrr2ihFL._SL160_.jpg"
+          alt="Just for Fun: The Story of an Accidental Revolutionary"
+        />
+        <h2 class="book-title">
+          Just for Fun: The Story of an Accidental Revolutionary
+        </h2>
+        <p class="book-author">Authors: Torvalds, Linus - Diamond, David</p>
+        <p class="book-isbn">9780066620732</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51qab-EEkGS._SL160_.jpg"
+          alt="Going for Broke: How Robert Campeau Bankrupted the Retail Industry, Jolted the Junk Bond Market, and Brought the Booming Eighties to a Crashing Halt"
+        />
+        <h2 class="book-title">
+          Going for Broke: How Robert Campeau Bankrupted the Retail Industry,
+          Jolted the Junk Bond Market, and Brought the Booming Eighties to a
+          Crashing Halt
+        </h2>
+        <p class="book-author">Rothchild, John</p>
+        <p class="book-isbn">9780671725938</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41AqL5e0ppL._SL160_.jpg"
+          alt="Jony Ive: The Genius Behind Apple's Greatest Products"
+        />
+        <h2 class="book-title">
+          Jony Ive: The Genius Behind Apple's Greatest Products
+        </h2>
+        <p class="book-author">Kahney, Leander</p>
+        <p class="book-isbn">9781591847069</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51BgKxKjkWL._SL160_.jpg"
+          alt="The Everything Store: Jeff Bezos and the Age of Amazon"
+        />
+        <h2 class="book-title">
+          The Everything Store: Jeff Bezos and the Age of Amazon
+        </h2>
+        <p class="book-author">Stone, Brad</p>
+        <p class="book-isbn">9780316219280</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51X6o6WBRWL._SL160_.jpg"
+          alt="Working Backwards: Insights, Stories, and Secrets from Inside Amazon"
+        />
+        <h2 class="book-title">
+          Working Backwards: Insights, Stories, and Secrets from Inside Amazon
+        </h2>
+        <p class="book-author">Authors: Bryar, Colin - Carr, Bill</p>
+        <p class="book-isbn">9781250267597</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41sqzg65VqL._SL160_.jpg"
+          alt="Amazon Unbound: Jeff Bezos and the Invention of a Global Empire"
+        />
+        <h2 class="book-title">
+          Amazon Unbound: Jeff Bezos and the Invention of a Global Empire
+        </h2>
+        <p class="book-author">Stone, Brad</p>
+        <p class="book-isbn">9781982132620</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41glzw9bJHL._SL160_.jpg"
+          alt="Buffett: The Making of an American Capitalist"
+        />
+        <h2 class="book-title">
+          Buffett: The Making of an American Capitalist
+        </h2>
+        <p class="book-author">Lowenstein, Roger</p>
+        <p class="book-isbn">9780812979275</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41Lej1cPiQL._SL160_.jpg"
+          alt="JOHNNY CARSON PA"
+        />
+        <h2 class="book-title">JOHNNY CARSON PA</h2>
+        <p class="book-author">Bushkin, Bushkin</p>
+        <p class="book-isbn">9780544334489</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41Go-g71S-L._SL160_.jpg"
+          alt="Four Seasons: The Story of a Business Philosophy"
+        />
+        <h2 class="book-title">
+          Four Seasons: The Story of a Business Philosophy
+        </h2>
+        <p class="book-author">Sharp, Isadore</p>
+        <p class="book-isbn">9781591845645</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51wlh1wumrL._SL160_.jpg"
+          alt="Ritz and Escoffier: The Hotelier, The Chef, and the Rise of the Leisure Class"
+        />
+        <h2 class="book-title">
+          Ritz and Escoffier: The Hotelier, The Chef, and the Rise of the
+          Leisure Class
+        </h2>
+        <p class="book-author">Barr, Luke</p>
+        <p class="book-isbn">9780804186315</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41TaYdvAuFL._SL160_.jpg"
+          alt="Shoe Dog: A Memoir by the Creator of Nike"
+        />
+        <h2 class="book-title">Shoe Dog: A Memoir by the Creator of Nike</h2>
+        <p class="book-author">Knight, Phil</p>
+        <p class="book-isbn">9781501135910</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41fZqCOl0jL._SL160_.jpg"
+          alt="Einstein: His Life and Universe"
+        />
+        <h2 class="book-title">Einstein: His Life and Universe</h2>
+        <p class="book-author">Isaacson, Walter</p>
+        <p class="book-isbn">9780743264747</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51bJHS4PgtL._SL160_.jpg"
+          alt="Becoming Trader Joe: How I Did Business My Way and Still Beat the Big Guys"
+        />
+        <h2 class="book-title">
+          Becoming Trader Joe: How I Did Business My Way and Still Beat the Big
+          Guys
+        </h2>
+        <p class="book-author">Coulombe, Joe</p>
+        <p class="book-isbn">9781400225439</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41IS1vf0BuL._SL160_.jpg"
+          alt="The Unpublished David Ogilvy"
+        />
+        <h2 class="book-title">The Unpublished David Ogilvy</h2>
+        <p class="book-author">Ogilvy, David</p>
+        <p class="book-isbn">9781781250877</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41g3s9x4m9L._SL160_.jpg"
+          alt="The Vagabonds: The Story of Henry Ford and Thomas Edison's Ten-Year Road Trip"
+        />
+        <h2 class="book-title">
+          The Vagabonds: The Story of Henry Ford and Thomas Edison's Ten-Year
+          Road Trip
+        </h2>
+        <p class="book-author">Guinn, Jeff</p>
+        <p class="book-isbn">9781501159312</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/310zQ0UbRdL._SL160_.jpg"
+          alt="The Almanack of Naval Ravikant: A Guide to Wealth and Happiness"
+        />
+        <h2 class="book-title">
+          The Almanack of Naval Ravikant: A Guide to Wealth and Happiness
+        </h2>
+        <p class="book-author">Jorgenson, Eric</p>
+        <p class="book-isbn">9781544514215</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51c-Gc7U0+L._SL160_.jpg"
+          alt="Big Brown: The Untold Story of UPS"
+        />
+        <h2 class="book-title">Big Brown: The Untold Story of UPS</h2>
+        <p class="book-author">Niemann, Greg</p>
+        <p class="book-isbn">9780787994020</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41-m7pRdlKL._SL160_.jpg"
+          alt="Arnold: The Education of a Bodybuilder"
+        />
+        <h2 class="book-title">Arnold: The Education of a Bodybuilder</h2>
+        <p class="book-author">Schwarzenegger, Arnold</p>
+        <p class="book-isbn">9780671797485</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51RytPZFsVL._SL160_.jpg"
+          alt="Writer, Sailor, Soldier, Spy: Ernest Hemingway's Secret Adventures, 1935-1961"
+        />
+        <h2 class="book-title">
+          Writer, Sailor, Soldier, Spy: Ernest Hemingway's Secret Adventures,
+          1935-1961
+        </h2>
+        <p class="book-author">Reynolds, Nicholas</p>
+        <p class="book-isbn">9780062440143</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51lFDSzUJIL._SL160_.jpg"
+          alt="Sid Meier's Memoir!: A Life in Computer Games"
+        />
+        <h2 class="book-title">
+          Sid Meier's Memoir!: A Life in Computer Games
+        </h2>
+        <p class="book-author">Meier, Sid</p>
+        <p class="book-isbn">9780393868296</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/4111Es3ImZL._SL160_.jpg"
+          alt="The Splendid and the Vile: A Saga of Churchill, Family, and Defiance During the Blitz"
+        />
+        <h2 class="book-title">
+          The Splendid and the Vile: A Saga of Churchill, Family, and Defiance
+          During the Blitz
+        </h2>
+        <p class="book-author">Larson, Erik</p>
+        <p class="book-isbn">9780385348713</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/71F54ZZEBBL._SL160_.gif"
+          alt="Founder: A Portrait of the First Rothschild and His Time"
+        />
+        <h2 class="book-title">
+          Founder: A Portrait of the First Rothschild and His Time
+        </h2>
+        <p class="book-author">Elon, Amos</p>
+        <p class="book-isbn">9780670868575</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/6132Z5ZZHQL._SL160_.jpg"
+          alt="The House of Rothschild: Money's Prophets 1798-1848"
+        />
+        <h2 class="book-title">
+          The House of Rothschild: Money's Prophets 1798-1848
+        </h2>
+        <p class="book-author">Ferguson, Niall</p>
+        <p class="book-isbn">9780670857685</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41Xc4p9N1mL._SL160_.jpg"
+          alt="Coco Chanel: The Legend and the Life"
+        />
+        <h2 class="book-title">Coco Chanel: The Legend and the Life</h2>
+        <p class="book-author">Picardie, Justine</p>
+        <p class="book-isbn">9780062074171</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41RaaYLtJ1L._SL160_.jpg"
+          alt="Against the Odds: An Autobiography"
+        />
+        <h2 class="book-title">Against the Odds: An Autobiography</h2>
+        <p class="book-author">Dyson, James</p>
+        <p class="book-isbn">9781587991707</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41NxwoqrX8L._SL160_.jpg"
+          alt="A Few Lessons for Investors and Managers From Warren Buffett"
+        />
+        <h2 class="book-title">
+          A Few Lessons for Investors and Managers From Warren Buffett
+        </h2>
+        <p class="book-author">Peter Bevelin (Editor); Warren Buffett</p>
+        <p class="book-isbn">9781578647453</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41-vOC+8wyL._SL160_.jpg"
+          alt="Creative Capital: Georges Doriot and the Birth of Venture Capital"
+        />
+        <h2 class="book-title">
+          Creative Capital: Georges Doriot and the Birth of Venture Capital
+        </h2>
+        <p class="book-author">Ante, Spencer E.</p>
+        <p class="book-isbn">9781422101223</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/415dPbdbEIL._SL160_.jpg"
+          alt="Inside Steve's Brain"
+        />
+        <h2 class="book-title">Inside Steve's Brain</h2>
+        <p class="book-author">Kahney, Leander</p>
+        <p class="book-isbn">9781591845515</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41QlXqzKLCL._SL160_.jpg"
+          alt="Invention: A Life of Learning Through Failure"
+        />
+        <h2 class="book-title">
+          Invention: A Life of Learning Through Failure
+        </h2>
+        <p class="book-author">Dyson, James</p>
+        <p class="book-isbn">9781982188450</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51kLHXcBElL._SL160_.jpg"
+          alt="The Man Who Sold America: The Amazing (but True!) Story of Albert D. Lasker and the Creation of the Advertising Century"
+        />
+        <h2 class="book-title">
+          The Man Who Sold America: The Amazing (but True!) Story of Albert D.
+          Lasker and the Creation of the Advertising Century
+        </h2>
+        <p class="book-author">
+          Authors: Cruikshank, Jeffrey L. - Schultz, Arthur W.
+        </p>
+        <p class="book-isbn">9781591393085</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/416XL-W-vZL._SL160_.jpg"
+          alt="Scientific Advertising: 21 advertising, headline and copywriting techniques"
+        />
+        <h2 class="book-title">
+          Scientific Advertising: 21 advertising, headline and copywriting
+          techniques
+        </h2>
+        <p class="book-author">Hopkins, Claude C</p>
+        <p class="book-isbn">9781517038076</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41CK7RVMDAL._SL160_.jpg"
+          alt="In the Company of Giants: Candid Conversations With the Visionaries of the Digital World"
+        />
+        <h2 class="book-title">
+          In the Company of Giants: Candid Conversations With the Visionaries of
+          the Digital World
+        </h2>
+        <p class="book-author">Authors: Jager, Rama Dev - Rafael, Ortiz</p>
+        <p class="book-isbn">9780070329652</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41iPgN9pOqL._SL160_.jpg"
+          alt="Steven Spielberg: A Biography, Second Edition"
+        />
+        <h2 class="book-title">
+          Steven Spielberg: A Biography, Second Edition
+        </h2>
+        <p class="book-author">McBride, Joseph</p>
+        <p class="book-isbn">9781604738360</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41NDHHwDQWL._SL160_.jpg"
+          alt="On Writing: A Memoir of the Craft (A Memoir of the Craft (Reissue))"
+        />
+        <h2 class="book-title">
+          On Writing: A Memoir of the Craft (A Memoir of the Craft (Reissue))
+        </h2>
+        <p class="book-author">King, Stephen</p>
+        <p class="book-isbn">9781982159375</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/4134jyydf2S._SL160_.jpg"
+          alt="Onassis: An Extravagant Life"
+        />
+        <h2 class="book-title">Onassis: An Extravagant Life</h2>
+        <p class="book-author">Brady, Frank</p>
+        <p class="book-isbn">9780989913737</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41tV1jW75PL._SL160_.jpg"
+          alt="Michael Jordan: The Life"
+        />
+        <h2 class="book-title">Michael Jordan: The Life</h2>
+        <p class="book-author">Lazenby, Roland</p>
+        <p class="book-isbn">9780316194761</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/419J4G3945L._SL160_.jpg"
+          alt="Driven from Within"
+        />
+        <h2 class="book-title">Driven from Within</h2>
+        <p class="book-author">Authors: Michael Jordan - Mark Vancil</p>
+        <p class="book-isbn">9780743284004</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/31fHifli3HL._SL160_.jpg"
+          alt="Steve Jobs"
+        />
+        <h2 class="book-title">Steve Jobs</h2>
+        <p class="book-author">Isaacson, Walter</p>
+        <p class="book-isbn">9781477701461</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41Y1WDPX-gL._SL160_.jpg"
+          alt="The General and the Genius: Groves and Oppenheimer - The Unlikely Partnership that Built the Atom Bomb (World War II Collection)"
+        />
+        <h2 class="book-title">
+          The General and the Genius: Groves and Oppenheimer - The Unlikely
+          Partnership that Built the Atom Bomb (World War II Collection)
+        </h2>
+        <p class="book-author">Kunetka, James</p>
+        <p class="book-isbn">9781684513598</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/419B3VxT0ES._SL160_.jpg"
+          alt="Authentic: A Memoir by the Founder of Vans"
+        />
+        <h2 class="book-title">Authentic: A Memoir by the Founder of Vans</h2>
+        <p class="book-author">Van Doren, Paul</p>
+        <p class="book-isbn">9781641120241</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51MINI43rQL._SL160_.jpg"
+          alt="Estee: A Success Story"
+        />
+        <h2 class="book-title">Estee: A Success Story</h2>
+        <p class="book-author">Lauder, Estee</p>
+        <p class="book-isbn">9780394551913</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41uvuk-OvhL._SL160_.jpg"
+          alt="My Turn: A Life of Total Football"
+        />
+        <h2 class="book-title">My Turn: A Life of Total Football</h2>
+        <p class="book-author">Cruyff, Johan</p>
+        <p class="book-isbn">9781568588414</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41wwL2x4LBL._SL160_.jpg"
+          alt="Bourdain: The Definitive Oral Biography"
+        />
+        <h2 class="book-title">Bourdain: The Definitive Oral Biography</h2>
+        <p class="book-author">Woolever, Laurie</p>
+        <p class="book-isbn">9780062909114</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41-H+jm-ApL._SL160_.jpg"
+          alt="Enzo Ferrari: The Man and the Machine"
+        />
+        <h2 class="book-title">Enzo Ferrari: The Man and the Machine</h2>
+        <p class="book-author">Yates, Enzo Ferrari Brock</p>
+        <p class="book-isbn">9780241977163</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51uJ32PE7JL._SL160_.jpg"
+          alt="Damn Right: Behind the Scenes with Berkshire Hathaway Billionaire Charlie Munger"
+        />
+        <h2 class="book-title">
+          Damn Right: Behind the Scenes with Berkshire Hathaway Billionaire
+          Charlie Munger
+        </h2>
+        <p class="book-author">Lowe, Janet</p>
+        <p class="book-isbn">9780471446910</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41O2FNKTIBL._SL160_.jpg"
+          alt="A Man for All Markets: From Las Vegas to Wall Street, How I Beat the Dealer and the Market"
+        />
+        <h2 class="book-title">
+          A Man for All Markets: From Las Vegas to Wall Street, How I Beat the
+          Dealer and the Market
+        </h2>
+        <p class="book-author">Thorp, Edward O.</p>
+        <p class="book-isbn">9780812979909</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51+FI4ESpzL._SL160_.jpg"
+          alt="De Gaulle"
+        />
+        <h2 class="book-title">De Gaulle</h2>
+        <p class="book-author">Jackson, Julian</p>
+        <p class="book-isbn">9780674241459</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51Qhpk5pEhL._SL160_.jpg"
+          alt="Churchill"
+        />
+        <h2 class="book-title">Churchill</h2>
+        <p class="book-author">Johnson, Paul</p>
+        <p class="book-isbn">9780143117995</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41G4MR55uRL._SL160_.jpg"
+          alt="Heroes: From Alexander the Great and Julius Caesar to Churchill and de Gaulle"
+        />
+        <h2 class="book-title">
+          Heroes: From Alexander the Great and Julius Caesar to Churchill and de
+          Gaulle
+        </h2>
+        <p class="book-author">Johnson, Paul</p>
+        <p class="book-isbn">9780061143168</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41YPyniR0mL._SL160_.jpg"
+          alt="The Essays of Warren Buffett: Lessons for Corporate America"
+        />
+        <h2 class="book-title">
+          The Essays of Warren Buffett: Lessons for Corporate America
+        </h2>
+        <p class="book-author">
+          Authors: Cunningham, Lawrence A. - Buffett, Warren E.
+        </p>
+        <p class="book-isbn">9780966446142</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41l333m2-NL._SL160_.jpg"
+          alt="Bloomberg by Bloomberg, Revised and Updated"
+        />
+        <h2 class="book-title">Bloomberg by Bloomberg, Revised and Updated</h2>
+        <p class="book-author">Bloomberg, Michael R.</p>
+        <p class="book-isbn">9781119554264</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/513SjJjA0aL._SL160_.jpg"
+          alt="Mind Your Own Business: A Maverick's Guide to Business, Leadership and Life"
+        />
+        <h2 class="book-title">
+          Mind Your Own Business: A Maverick's Guide to Business, Leadership and
+          Life
+        </h2>
+        <p class="book-author">Harman, Sidney</p>
+        <p class="book-isbn">9780385509596</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41yRbp7CJ7L._SL160_.jpg"
+          alt="Love, Lucy (Berkley Boulevard Celebrity Autobiography)"
+        />
+        <h2 class="book-title">
+          Love, Lucy (Berkley Boulevard Celebrity Autobiography)
+        </h2>
+        <p class="book-author">Ball, Lucille</p>
+        <p class="book-isbn">9780425177310</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51lhr4wvXWL._SL160_.jpg"
+          alt="Time to Make the Donuts: The Founder of Dunkin Donuts Shares an American Journey"
+        />
+        <h2 class="book-title">
+          Time to Make the Donuts: The Founder of Dunkin Donuts Shares an
+          American Journey
+        </h2>
+        <p class="book-author">William Rosenberg</p>
+        <p class="book-isbn">9780867308617</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51gL6nolP2L._SL160_.jpg"
+          alt="Alexander the Great: The Brief Life and Towering Exploits of History's Greatest Conqueror--As Told By His Original Biographers"
+        />
+        <h2 class="book-title">
+          Alexander the Great: The Brief Life and Towering Exploits of History's
+          Greatest Conqueror--As Told By His Original Biographers
+        </h2>
+        <p class="book-author">
+          Authors: Arrian - Plutarch - Curtius Rufus, Quintus
+        </p>
+        <p class="book-isbn">9780142001400</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51CKE+3CHxL._SL160_.jpg"
+          alt="The Founders: The Story of Paypal and the Entrepreneurs Who Shaped Silicon Valley"
+        />
+        <h2 class="book-title">
+          The Founders: The Story of Paypal and the Entrepreneurs Who Shaped
+          Silicon Valley
+        </h2>
+        <p class="book-author">Soni, Jimmy</p>
+        <p class="book-isbn">9781501197260</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51Lq04BpjVL._SL160_.jpg"
+          alt="Made in America: Mi Historia / Made In America: My History (Spanish Edition)"
+        />
+        <h2 class="book-title">
+          Made in America: Mi Historia / Made In America: My History (Spanish
+          Edition)
+        </h2>
+        <p class="book-author">Walton, Sam</p>
+        <p class="book-isbn">9780525564898</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41eMjxblheL._SL160_.jpg"
+          alt="To Pixar And Beyond: My Unlikely Journey with Steve Jobs to Make Entertainment History"
+        />
+        <h2 class="book-title">
+          To Pixar And Beyond: My Unlikely Journey with Steve Jobs to Make
+          Entertainment History
+        </h2>
+        <p class="book-author">Levy, Lawrence</p>
+        <p class="book-isbn">9781328745613</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51vA63K5gkL._SL160_.jpg"
+          alt="The Sugar King of Havana: The Rise and Fall of Julio Lobo, Cuba's Last Tycoon"
+        />
+        <h2 class="book-title">
+          The Sugar King of Havana: The Rise and Fall of Julio Lobo, Cuba's Last
+          Tycoon
+        </h2>
+        <p class="book-author">Rathbone, John Paul</p>
+        <p class="book-isbn">9780143119333</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51DuTdsUXHL._SL160_.jpg"
+          alt="Decoded"
+        />
+        <h2 class="book-title">Decoded</h2>
+        <p class="book-author">Jay-Z</p>
+        <p class="book-isbn">9780812981155</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/5117GbqBijL._SL160_.jpg"
+          alt="The Wright Brothers"
+        />
+        <h2 class="book-title">The Wright Brothers</h2>
+        <p class="book-author">McCullough, David</p>
+        <p class="book-isbn">9781476728759</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/515FKwDrZ9L._SL160_.jpg"
+          alt="Mozart: A Life"
+        />
+        <h2 class="book-title">Mozart: A Life</h2>
+        <p class="book-author">Johnson, Paul</p>
+        <p class="book-isbn">9780143126065</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/5156J27G6ML._SL160_.jpg"
+          alt="Francis Ford Coppola: A Filmmaker's Life"
+        />
+        <h2 class="book-title">Francis Ford Coppola: A Filmmaker's Life</h2>
+        <p class="book-author">Schumacher, Michael</p>
+        <p class="book-isbn">9780517704455</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/414XeSnT8LS._SL160_.jpg"
+          alt="Risk Game: Self Portrait of an Entrepreneur"
+        />
+        <h2 class="book-title">Risk Game: Self Portrait of an Entrepreneur</h2>
+        <p class="book-author">Greenburger, Francis J.</p>
+        <p class="book-isbn">9781950665778</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51YrbPwTnnL._SL160_.jpg"
+          alt="In-N-Out Burger: A Behind-the-Counter Look at the Fast-Food Chain That Breaks All the Rules"
+        />
+        <h2 class="book-title">
+          In-N-Out Burger: A Behind-the-Counter Look at the Fast-Food Chain That
+          Breaks All the Rules
+        </h2>
+        <p class="book-author">Perman, Stacy</p>
+        <p class="book-isbn">9780061346712</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41Bby8nzNCL._SL160_.jpg"
+          alt="Rick Rubin: In the Studio"
+        />
+        <h2 class="book-title">Rick Rubin: In the Studio</h2>
+        <p class="book-author">Brown, Jake</p>
+        <p class="book-isbn">9781550228755</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51ZcesUAS4L._SL160_.jpg"
+          alt="Last Train to Paradise: Henry Flagler and the Spectacular Rise and Fall of the Railroad that Crossed an Ocean"
+        />
+        <h2 class="book-title">
+          Last Train to Paradise: Henry Flagler and the Spectacular Rise and
+          Fall of the Railroad that Crossed an Ocean
+        </h2>
+        <p class="book-author">Standiford, Les</p>
+        <p class="book-isbn">9781400049479</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51YuHCz4WLL._SL160_.jpg"
+          alt="Titan: The Life of John D. Rockefeller, Sr."
+        />
+        <h2 class="book-title">Titan: The Life of John D. Rockefeller, Sr.</h2>
+        <p class="book-author">Chernow, Ron</p>
+        <p class="book-isbn">9781400077304</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41IGfEvLvUL._SL160_.jpg"
+          alt="I, Steve: Steve Jobs In His Own Words (In Their Own Words)"
+        />
+        <h2 class="book-title">
+          I, Steve: Steve Jobs In His Own Words (In Their Own Words)
+        </h2>
+        <p class="book-author">ISBN-13: 9781932841664</p>
+        <p class="book-isbn">9781932841664</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51WDPqZmEiL._SL160_.jpg"
+          alt="The Richest Man Who Ever Lived: The Life and Times of Jacob Fugger"
+        />
+        <h2 class="book-title">
+          The Richest Man Who Ever Lived: The Life and Times of Jacob Fugger
+        </h2>
+        <p class="book-author">Steinmetz, Greg</p>
+        <p class="book-isbn">9781451688566</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41WHPvAiStL._SL160_.jpg"
+          alt="Franklin & Washington: The Founding Partnership"
+        />
+        <h2 class="book-title">
+          Franklin & Washington: The Founding Partnership
+        </h2>
+        <p class="book-author">Larson, Edward J.</p>
+        <p class="book-isbn">9780062880154</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51RuvZ6thRL._SL160_.jpg"
+          alt="Socrates: A Man for Our Times"
+        />
+        <h2 class="book-title">Socrates: A Man for Our Times</h2>
+        <p class="book-author">Johnson, Paul</p>
+        <p class="book-isbn">9780143122210</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51+98Av+MnL._SL160_.jpg"
+          alt="When Money Was In Fashion: Henry Goldman, Goldman Sachs, and the Founding of Wall Street"
+        />
+        <h2 class="book-title">
+          When Money Was In Fashion: Henry Goldman, Goldman Sachs, and the
+          Founding of Wall Street
+        </h2>
+        <p class="book-author">Fisher, June Breton</p>
+        <p class="book-isbn">9780230114050</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/519tnIEEQfL._SL160_.jpg"
+          alt="John D.: Founding Father of the Rockefellers"
+        />
+        <h2 class="book-title">John D.: Founding Father of the Rockefellers</h2>
+        <p class="book-author">David Freeman Hawke</p>
+        <p class="book-isbn">9781664617315</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41U2Fw9P80L._SL160_.jpg"
+          alt="The Fish That Ate the Whale: The Life and Times of America's Banana King"
+        />
+        <h2 class="book-title">
+          The Fish That Ate the Whale: The Life and Times of America's Banana
+          King
+        </h2>
+        <p class="book-author">Cohen, Rich</p>
+        <p class="book-isbn">9781250033314</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51ukKFBaqSL._SL160_.jpg"
+          alt="The Father of Spin: Edward L. Bernays and The Birth of Public Relations"
+        />
+        <h2 class="book-title">
+          The Father of Spin: Edward L. Bernays and The Birth of Public
+          Relations
+        </h2>
+        <p class="book-author">Tye, Larry</p>
+        <p class="book-isbn">9780805067897</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51YkyLm-4uL._SL160_.jpg"
+          alt="Explore/Create: My Life in Pursuit of New Frontiers, Hidden Worlds, and the Creative Spark"
+        />
+        <h2 class="book-title">
+          Explore/Create: My Life in Pursuit of New Frontiers, Hidden Worlds,
+          and the Creative Spark
+        </h2>
+        <p class="book-author">Authors: Garriott, Richard - Fisher, David</p>
+        <p class="book-isbn">9780062286666</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/61TPfsA0qTL._SL160_.jpg"
+          alt="Dark Genius of Wall Street: The Misunderstood Life of Jay Gould, King of the Robber Barons"
+        />
+        <h2 class="book-title">
+          Dark Genius of Wall Street: The Misunderstood Life of Jay Gould, King
+          of the Robber Barons
+        </h2>
+        <p class="book-author">Renehan Jr., Edward J.</p>
+        <p class="book-isbn">9780465068869</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41W+qdgNHsL._SL160_.jpg"
+          alt="Chronicles: Volume One"
+        />
+        <h2 class="book-title">Chronicles: Volume One</h2>
+        <p class="book-author">Dylan, Bob</p>
+        <p class="book-isbn">9780743244589</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41t4qVvfmRL._SL160_.jpg"
+          alt="The Adventures of Herbie Cohen: World's Greatest Negotiator"
+        />
+        <h2 class="book-title">
+          The Adventures of Herbie Cohen: World's Greatest Negotiator
+        </h2>
+        <p class="book-author">Cohen, Rich</p>
+        <p class="book-isbn">9780374169619</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51p3CDbGpDL._SL160_.jpg"
+          alt="Land's Polaroid: A Company and the Man Who Invented It"
+        />
+        <h2 class="book-title">
+          Land's Polaroid: A Company and the Man Who Invented It
+        </h2>
+        <p class="book-author">Wensberg, Peter C.</p>
+        <p class="book-isbn">9780395421147</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41ihVttFVkL._SL160_.jpg"
+          alt="Instant: The Story of Polaroid"
+        />
+        <h2 class="book-title">Instant: The Story of Polaroid</h2>
+        <p class="book-author">Bonanos, Christopher</p>
+        <p class="book-isbn">9781616890858</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51YGXTMCQqL._SL160_.jpg"
+          alt="Becoming Steve Jobs: The Evolution of a Reckless Upstart into a Visionary Leader"
+        />
+        <h2 class="book-title">
+          Becoming Steve Jobs: The Evolution of a Reckless Upstart into a
+          Visionary Leader
+        </h2>
+        <p class="book-author">Authors: Schlender, Brent - Tetzeli, Rick</p>
+        <p class="book-isbn">9780385347426</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41IoTkXfQtL._SL160_.jpg"
+          alt="My Life and Work: Autobiography of Henry Ford (Illustrated)"
+        />
+        <h2 class="book-title">
+          My Life and Work: Autobiography of Henry Ford (Illustrated)
+        </h2>
+        <p class="book-author">Ford, Henry</p>
+        <p class="book-isbn">9798685603098</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51B3282MNFL._SL160_.jpg"
+          alt="Edison: A Biography"
+        />
+        <h2 class="book-title">Edison: A Biography</h2>
+        <p class="book-author">Josephson, Matthew</p>
+        <p class="book-isbn">9780471548065</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41mgsLD0hYL._SL160_.jpg"
+          alt="Cable Cowboy: John Malone and the rise of the modern cable-TV business"
+        />
+        <h2 class="book-title">
+          Cable Cowboy: John Malone and the rise of the modern cable-TV business
+        </h2>
+        <p class="book-author">Robichaux, Mark</p>
+        <p class="book-isbn">9798987113424</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/514q1WJONCL._SL160_.jpg"
+          alt="Am I Being Too Subtle?: Straight Talk From a Business Rebel"
+        />
+        <h2 class="book-title">
+          Am I Being Too Subtle?: Straight Talk From a Business Rebel
+        </h2>
+        <p class="book-author">Zell, Sam</p>
+        <p class="book-isbn">9781591848233</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41QXDV7KvNL._SL160_.jpg"
+          alt="Pieces of the Action"
+        />
+        <h2 class="book-title">Pieces of the Action</h2>
+        <p class="book-author">Bush, Vannevar</p>
+        <p class="book-isbn">9781953953209</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41c2ExJTw4L._SL160_.jpg"
+          alt="Endless Frontier: Vannevar Bush, Engineer of the American Century"
+        />
+        <h2 class="book-title">
+          Endless Frontier: Vannevar Bush, Engineer of the American Century
+        </h2>
+        <p class="book-author">Zachary, G. Pascal</p>
+        <p class="book-isbn">9781501196454</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/414+rSgoUqL._SL160_.jpg"
+          alt="Showboat: The Life of Kobe Bryant"
+        />
+        <h2 class="book-title">Showboat: The Life of Kobe Bryant</h2>
+        <p class="book-author">Lazenby, Roland</p>
+        <p class="book-isbn">9780316387149</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51U2Nh1UllL._SL160_.jpg"
+          alt="The Mamba Mentality: How I Play"
+        />
+        <h2 class="book-title">The Mamba Mentality: How I Play</h2>
+        <p class="book-author">Bryant, Kobe</p>
+        <p class="book-isbn">9780374201234</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/318nTPr+4nL._SL160_.jpg"
+          alt="The New New Thing: A Silicon Valley Story"
+        />
+        <h2 class="book-title">The New New Thing: A Silicon Valley Story</h2>
+        <p class="book-author">Lewis, Michael</p>
+        <p class="book-isbn">9780393347814</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51Rxed9CgdL._SL160_.jpg"
+          alt="Hackers & Painters: Big Ideas from the Computer Age"
+        />
+        <h2 class="book-title">
+          Hackers & Painters: Big Ideas from the Computer Age
+        </h2>
+        <p class="book-author">Graham, Paul</p>
+        <p class="book-isbn">9781449389550</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/4137OkbPQ4L._SL160_.jpg"
+          alt="Zero to One: Notes on Startups, or How to Build the Future"
+        />
+        <h2 class="book-title">
+          Zero to One: Notes on Startups, or How to Build the Future
+        </h2>
+        <p class="book-author">Authors: Thiel, Peter - Masters, Blake</p>
+        <p class="book-isbn">9780804139298</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51gRL5m+KML._SL160_.jpg"
+          alt="What I Learned Before I Sold to Warren Buffett: An Entrepreneur's Guide to Developing a Highly Successful Company"
+        />
+        <h2 class="book-title">
+          What I Learned Before I Sold to Warren Buffett: An Entrepreneur's
+          Guide to Developing a Highly Successful Company
+        </h2>
+        <p class="book-author">
+          Authors: Helzberg Jr., Barnett C. - Helzberg, Barnett
+        </p>
+        <p class="book-isbn">9780471271147</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41skn-1kfdL._SL160_.jpg"
+          alt="Starting At Zero: His Own Story"
+        />
+        <h2 class="book-title">Starting At Zero: His Own Story</h2>
+        <p class="book-author">Hendrix, Jimi</p>
+        <p class="book-isbn">9781620403327</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41pzvZ24NvL._SL160_.jpg"
+          alt="Creative Selection: Inside Apple's Design Process During the Golden Age of Steve Jobs"
+        />
+        <h2 class="book-title">
+          Creative Selection: Inside Apple's Design Process During the Golden
+          Age of Steve Jobs
+        </h2>
+        <p class="book-author">Kocienda, Ken</p>
+        <p class="book-isbn">9781250203410</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51+fi1R1jdL._SL160_.jpg"
+          alt="The Autobiography of Andrew Carnegie and the Gospel of Wealth (Signet Classics)"
+        />
+        <h2 class="book-title">
+          The Autobiography of Andrew Carnegie and the Gospel of Wealth (Signet
+          Classics)
+        </h2>
+        <p class="book-author">Carnegie, Andrew</p>
+        <p class="book-isbn">9780451530387</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51zc4LP2SyL._SL160_.jpg"
+          alt="Meet You in Hell: Andrew Carnegie, Henry Clay Frick, and the Bitter Partnership That Changed America"
+        />
+        <h2 class="book-title">
+          Meet You in Hell: Andrew Carnegie, Henry Clay Frick, and the Bitter
+          Partnership That Changed America
+        </h2>
+        <p class="book-author">Standiford, Les</p>
+        <p class="book-isbn">9781400047680</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41THXlpbEgL._SL160_.jpg"
+          alt="All I Want To Know Is Where I'm Going To Die So I'll Never Go There: Buffett & Munger – A Study in Simplicity and Uncommon, Common Sense"
+        />
+        <h2 class="book-title">
+          All I Want To Know Is Where I'm Going To Die So I'll Never Go There:
+          Buffett & Munger – A Study in Simplicity and Uncommon, Common Sense
+        </h2>
+        <p class="book-author">Peter Bevelin</p>
+        <p class="book-isbn">9781681840482</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51e1cICvWxL._SL160_.jpg"
+          alt="Rolls-Royce: The Magic of a Name: The First Forty Years of Britains Most Prestigious Company"
+        />
+        <h2 class="book-title">
+          Rolls-Royce: The Magic of a Name: The First Forty Years of Britains
+          Most Prestigious Company
+        </h2>
+        <p class="book-author">Pugh, Peter</p>
+        <p class="book-isbn">9781848319240</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51LpEW8WEVL._SL160_.jpg"
+          alt="Ralph Lauren: The Man Behind the Mystique"
+        />
+        <h2 class="book-title">Ralph Lauren: The Man Behind the Mystique</h2>
+        <p class="book-author">Trachtenberg, Jeffrey A.</p>
+        <p class="book-isbn">9780316852142</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51SuKPZZzuL._SL160_.jpg"
+          alt="Hard Drive: Bill Gates and the Making of the Microsoft Empire"
+        />
+        <h2 class="book-title">
+          Hard Drive: Bill Gates and the Making of the Microsoft Empire
+        </h2>
+        <p class="book-author">Authors: James Wallace - Jim Erickson</p>
+        <p class="book-isbn">9780887306297</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41EzDV4FgwL._SL160_.jpg"
+          alt="Grinding It Out: The Making of McDonald's"
+        />
+        <h2 class="book-title">Grinding It Out: The Making of McDonald's</h2>
+        <p class="book-author">Kroc, Ray</p>
+        <p class="book-isbn">9781250130280</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://images.isbndb.com/covers/33/41/9781501153341.jpg"
+          alt="Tao of Charlie Munger: A Compilation of Quotes from Berkshire Hathaway's Vice Chairman on Life, Business, and the Pursuit of Wealth With Commentary by David Clark"
+        />
+        <h2 class="book-title">
+          Tao of Charlie Munger: A Compilation of Quotes from Berkshire
+          Hathaway's Vice Chairman on Life, Business, and the Pursuit of Wealth
+          With Commentary by David Clark
+        </h2>
+        <p class="book-author">Clark, David</p>
+        <p class="book-isbn">9781501153341</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/61dhcCsfKlL._SL160_.jpg"
+          alt="The Taste of Luxury: Bernard Arnault and the Moet-Hennessy Louis Vuitton Story"
+        />
+        <h2 class="book-title">
+          The Taste of Luxury: Bernard Arnault and the Moet-Hennessy Louis
+          Vuitton Story
+        </h2>
+        <p class="book-author">Authors: Forestier, Nadege - Ravai, Nazanine</p>
+        <p class="book-isbn">9780747512028</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51EoJO-3VhL._SL160_.jpg"
+          alt="Let My People Go Surfing: The Education of a Reluctant Businessman--Including 10 More Years of Business Unusual"
+        />
+        <h2 class="book-title">
+          Let My People Go Surfing: The Education of a Reluctant
+          Businessman--Including 10 More Years of Business Unusual
+        </h2>
+        <p class="book-author">Chouinard, Yvon</p>
+        <p class="book-isbn">9780143109679</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41-z0MNHwKL._SL160_.jpg"
+          alt="Steve Jobs"
+        />
+        <h2 class="book-title">Steve Jobs</h2>
+        <p class="book-author">Isaacson, Walter</p>
+        <p class="book-isbn">9781451648539</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51usR3nfqyL._SL160_.jpg"
+          alt="Against the Odds: An Autobiography"
+        />
+        <h2 class="book-title">Against the Odds: An Autobiography</h2>
+        <p class="book-author">Dyson, James</p>
+        <p class="book-isbn">9781587990144</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41QUQaWtwYL._SL160_.jpg"
+          alt="Tiger Woods"
+        />
+        <h2 class="book-title">Tiger Woods</h2>
+        <p class="book-author">Authors: Benedict, Jeff - Keteyian, Armen</p>
+        <p class="book-isbn">9781501126444</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51yT08JkiIL._SL160_.jpg"
+          alt="The Women of Berkshire Hathaway: Lessons from Warren Buffett's Female CEOs and Directors"
+        />
+        <h2 class="book-title">
+          The Women of Berkshire Hathaway: Lessons from Warren Buffett's Female
+          CEOs and Directors
+        </h2>
+        <p class="book-author">Linder, Karen</p>
+        <p class="book-isbn">9781118182628</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51zjW+p8qzL._SL160_.jpg"
+          alt="Sol Price Retail Revolutionary & Social Innovator"
+        />
+        <h2 class="book-title">
+          Sol Price Retail Revolutionary & Social Innovator
+        </h2>
+        <p class="book-author">Robert E. Price</p>
+        <p class="book-isbn">9780988680609</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41rgYfvXluL._SL160_.jpg"
+          alt="Confessions of an Advertising Man"
+        />
+        <h2 class="book-title">Confessions of an Advertising Man</h2>
+        <p class="book-author">Ogilvy, David</p>
+        <p class="book-isbn">9781904915379</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41CXFZN69AL._SL160_.jpg"
+          alt="Dynasties: Fortunes and Misfortunes of the World's Great Family Businesses"
+        />
+        <h2 class="book-title">
+          Dynasties: Fortunes and Misfortunes of the World's Great Family
+          Businesses
+        </h2>
+        <p class="book-author">Landes, David S.</p>
+        <p class="book-isbn">9780670033386</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/51tmT+fpdaL._SL160_.jpg"
+          alt="Glock: The Rise of America's Gun"
+        />
+        <h2 class="book-title">Glock: The Rise of America's Gun</h2>
+        <p class="book-author">Barrett, Paul M.</p>
+        <p class="book-isbn">9780274809943</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/412W4xcCpXL._SL160_.jpg"
+          alt="Arnold and Me: In the Shadow of the Austrian Oak"
+        />
+        <h2 class="book-title">
+          Arnold and Me: In the Shadow of the Austrian Oak
+        </h2>
+        <p class="book-author">Baker, Barbara Outland</p>
+        <p class="book-isbn">9781425952228</p>
+      </div>
+
+      <div class="book-card">
+        <img
+          src="https://m.media-amazon.com/images/I/41tV1jW75PL._SL160_.jpg"
+          alt="Michael Jordan: The Life"
+        />
+        <h2 class="book-title">Michael Jordan: The Life</h2>
+        <p class="book-author">Lazenby, Roland</p>
+        <p class="book-isbn">9780316194761</p>
+      </div>
+    </div>
+  </body>
 </html>
