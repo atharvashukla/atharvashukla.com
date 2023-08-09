@@ -69,7 +69,6 @@ jq '.scripts += {
   "build": "rimraf ./build && tsc",
   "start": "npm run build && node build/index.js",
   "test": "jest",
-  "test:dev": "jest --watchAll"
+  "test:dev": "jest --watchAll",
+  "watch": "concurrently \"npm run test:dev\" \"npm run start:dev\""
 }' package.json > package.tmp.json && mv package.tmp.json package.json
-
-npx concurrently "npm run test:dev" "npm run start:dev"
