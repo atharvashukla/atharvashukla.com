@@ -37,7 +37,9 @@ export default function Podcasts() {
           David Perell
         </li>
         <li>
-          <a href="https://www.youtube.com/@LennysPodcast">Lenny's Podcast</a>
+          <a href="https://www.youtube.com/@LennysPodcast">
+            {"Lenny's Podcast"}
+          </a>
           {" | "} Lenny Rachitsky
         </li>
       </ul>
