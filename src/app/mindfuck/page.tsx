@@ -18,9 +18,11 @@ const MindfuckManual = () => {
       </p>
       <h2 className="text-2xl font-bold mb-4">Power Cards</h2>
       <ul className="list-disc list-inside mb-4">
-        <li>K - You can shuffle any one person's cards.</li>
-        <li>Q - Either see anyone's cards or see your cards.</li>
-        <li>J - You can swap ONE of your cards with anyone else's cards</li>
+        <li>K - You can shuffle any one person&apos;s cards.</li>
+        <li>Q - Either see anyone&apos;s cards or see your cards.</li>
+        <li>
+          J - You can swap ONE of your cards with anyone else&apos;s cards
+        </li>
       </ul>
       <h2 className="text-2xl font-bold mb-4">Points table</h2>
       <table className="table-auto border-collapse w-full">
