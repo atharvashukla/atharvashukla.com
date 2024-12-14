@@ -38,6 +38,10 @@ export default function About() {
             </li>
           </ul>
         </li>
+        <li>
+          2025:
+          <ul>{/* <li>...</li> */}</ul>
+        </li>
       </ul>
       <hr />
       <h2>Quotes</h2>
